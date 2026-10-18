@@ -31,6 +31,7 @@ a{color:inherit}img{max-width:100%;display:block}
 .hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
 .badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
 .trust{background:var(--accent);color:#fff}
 .trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
@@ -70,19 +71,19 @@ footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 <div class="preview">Sample website made for Capital Barber Shop by Kevin. Not live yet.</div>
 <nav class="nav"><div class="wrap">
 <a class="logo" href="#top">Capital Barber <span>Shop</span></a>
-<div class="links"><a href="#services">Services</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#services">Services</a><a href="#area">Area</a><a href="#contact">Contact</a></div>
 <a class="btn" href="https://online.getsquire.com/book/capitalbarbershop-ottawa">Book online</a>
 </div></nav>
 <header class="hero" id="top"><div class="wrap">
 <div><div class="eyebrow">Barber Shop &middot; the Glebe, Ottawa</div>
 <h1>A new standard for the city</h1><p>Classic cuts, hot towel shaves and beard work on Bank Street in the Glebe.</p>
 <div class="cta"><a class="btn" href="https://online.getsquire.com/book/capitalbarbershop-ottawa">Book online</a><a class="btn ghost" href="#contact">Request a quote</a></div></div>
-<div class="badge"><svg viewBox="0 0 24 24"><path d="M3 6a3 3 0 1 0 6 0a3 3 0 1 0 -6 0 M3 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0 M8.1 8.1L20 20 M8.1 15.9L20 4"/></svg></div>
+<div class="badge"><img src="https://capitalbarbershop.ca/img/logo.svg" alt="Capital Barber Shop logo" onerror="this.parentNode.innerHTML=''"></div>
 </div></header>
 <div class="trust"><div class="wrap"><span>Rated 5.0 on Squire</span><span>Hot towel shaves</span><span>Book online 24/7</span><span>Bank St in the Glebe</span></div></div>
 <section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Haircut</h3><p>Sharp, classic and modern cuts.</p></div><div class="card"><div class="num">02</div><h3>Hot towel shave</h3><p>The traditional straight-razor experience.</p></div><div class="card"><div class="num">03</div><h3>Beard trim</h3><p>Shaped, lined and finished properly.</p></div><div class="card"><div class="num">04</div><h3>Mustache trim</h3><p>Clean detail work.</p></div><div class="card"><div class="num">05</div><h3>Groomsmen package</h3><p>Get the whole wedding party looking right.</p></div></div></div></section>
 <section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Capital Barber Shop?</h2><ul class="why"><li>On Bank Street in the Glebe</li><li>Traditional hot towel shaves</li><li>Groomsmen and group bookings</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday</td><td>Closed</td></tr><tr><td>Tuesday</td><td>9am to 6pm</td></tr><tr><td>Wednesday</td><td>9am to 6pm</td></tr><tr><td>Thursday</td><td>9am to 7pm</td></tr><tr><td>Friday</td><td>9am to 7pm</td></tr><tr><td>Saturday</td><td>10am to 6pm</td></tr><tr><td>Sunday</td><td>10am to 5pm</td></tr></table></div></div></section>
-
+<section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://capitalbarbershop.ca/img/services-haircut.png" alt="Haircut" onerror="dropImg(this)"><img loading="lazy" src="https://capitalbarbershop.ca/img/services-shave.png" alt="Hot towel shave" onerror="dropImg(this)"><img loading="lazy" src="https://capitalbarbershop.ca/img/services-beard.png" alt="Beard trim" onerror="dropImg(this)"><img loading="lazy" src="https://capitalbarbershop.ca/img/services-stache.png" alt="Mustache trim" onerror="dropImg(this)"></div></div></section>
 <section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Visit us at 590 Bank St, in the Glebe.</p><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=590%20Bank%20St%2C%20Ottawa%2C%20ON%20K1S%203T3&output=embed" title="Map"></iframe></div></section>
 <section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
 <div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
