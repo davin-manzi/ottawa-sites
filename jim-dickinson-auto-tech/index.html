@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jim Dickinson Auto Tech | Auto Repair in Ottawa</title>
-<meta name="description" content="Fast, friendly and quality auto repair in Ottawa from expert mechanics who care about you and your vehicle.">
+<meta name="description" content="CAA Approved auto repair with a 6 month / 10,000 km warranty, a free loaner car, and no work done without your OK.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -58,6 +58,32 @@ h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
 form{display:grid;gap:12px}
 input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
 input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
 .callbar .btn{flex:1;padding:12px}
@@ -65,36 +91,43 @@ footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
 @media(min-width:801px){body{padding-bottom:0}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRepair", "name": "Jim Dickinson Auto Tech", "telephone": "613-721-6244", "areaServed": "Ottawa", "email": "jim@jimdickinsonautotech.com", "address": "1150 Gladstone Ave, Ottawa, ON K1Y 3H6", "sameAs": ["https://g.page/autorepairottawa", "https://twitter.com/CarDoctorJim"]}</script>
 <script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
 </head>
 <body>
 <div class="preview">Sample website made for Jim Dickinson Auto Tech by Kevin. Not live yet.</div>
 <nav class="nav"><div class="wrap">
 <a class="logo" href="#top">Jim Dickinson Auto <span>Tech</span></a>
-<div class="links"><a href="#services">Services</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
 <a class="btn" href="tel:6137216244">Call 613-721-6244</a>
 </div></nav>
 <header class="hero" id="top"><div class="wrap">
 <div><div class="eyebrow">Auto Repair &middot; Ottawa</div>
-<h1>Auto repair on Gladstone since 1984</h1><p>Fast, friendly and quality auto repair in Ottawa from expert mechanics who care about you and your vehicle.</p>
-<div class="cta"><a class="btn" href="tel:6137216244">Call 613-721-6244</a><a class="btn ghost" href="#contact">Request a quote</a></div></div>
+<h1>Auto repair on Gladstone since 1984</h1><p>CAA Approved auto repair with a 6 month / 10,000 km warranty, a free loaner car, and no work done without your OK.</p>
+<div class="cta"><a class="btn" href="tel:6137216244">Call 613-721-6244</a><a class="btn ghost" href="#contact">Book a repair</a></div></div>
 <div class="badge"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
 </div></header>
-<div class="trust"><div class="wrap"><span>Serving Ottawa since 1984</span><span>Free loaner cars</span><span>Hybrid &amp; EV service</span><span>Ontario safety inspections</span></div></div>
-<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Brakes &amp; suspension</h3><p>Inspections, repairs and replacements to keep you stopping safely.</p></div><div class="card"><div class="num">02</div><h3>Oil changes &amp; tune-ups</h3><p>Regular maintenance that keeps your car running right.</p></div><div class="card"><div class="num">03</div><h3>Safety &amp; pre-purchase inspections</h3><p>Ontario safety certificates and inspections before you buy.</p></div><div class="card"><div class="num">04</div><h3>Hybrid &amp; EV service</h3><p>Service for hybrid and electric vehicles.</p></div><div class="card"><div class="num">05</div><h3>Air conditioning</h3><p>A/C checks and repairs before the summer heat.</p></div><div class="card"><div class="num">06</div><h3>Free loaner cars</h3><p>Stay on the road while we work on yours.</p></div></div></div></section>
-<section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Jim Dickinson Auto Tech?</h2><ul class="why"><li>Serving Ottawa since 1984</li><li>Free loaner cars</li><li>Hybrid and EV service</li><li>Central location on Gladstone Ave</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Thursday</td><td>8:00am to 7:00pm</td></tr><tr><td>Friday to Sunday</td><td>Closed</td></tr></table></div></div></section>
+<div class="trust"><div class="wrap"><span>Since 1984</span><span>CAA/AAA Approved</span><span>6 mo / 10,000 km warranty</span><span>Free loaner car</span><span>Class A technicians</span></div></div>
+<section id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Ottawa auto repair since 1984</h2><p class="lead">Jim Dickinson Auto Tech has been fixing cars on Gladstone Avenue since 1984. We service import and domestic cars, light trucks and SUVs.</p><p class="lead">Our Class A technicians get in-house training so repairs are done right the first time. We only repair what&#x27;s necessary, with your approval first, and we&#x27;ll point out anything else to watch, without pressure.</p></div><div class="facts"><div class="fact">Serving Ottawa since 1984</div><div class="fact">CAA/AAA Approved Auto Repair</div><div class="fact">Featured in the Ottawa Sun and Ottawa Citizen</div><div class="fact">29 makes serviced, domestic, Asian and European</div></div></div></section>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Brakes</h3><p>Inspections, pads, rotors and repairs.</p></div><div class="card"><div class="num">02</div><h3>Oil changes &amp; tune-ups</h3><p>Regular maintenance that keeps your car running right.</p></div><div class="card"><div class="num">03</div><h3>Inspections</h3><p>Safety certificates, pre-purchase and pre-warranty-expiry inspections.</p></div><div class="card"><div class="num">04</div><h3>Hybrid &amp; EV service</h3><p>Inspection and repair for hybrid and electric vehicles.</p></div><div class="card"><div class="num">05</div><h3>Tires &amp; flat repair</h3><p>Tire service and flat repairs.</p></div><div class="card"><div class="num">06</div><h3>Steering &amp; suspension</h3><p>Shocks, struts and steering repairs.</p></div><div class="card"><div class="num">07</div><h3>Transmission &amp; clutch</h3><p>Diagnosis and repair.</p></div><div class="card"><div class="num">08</div><h3>Electrical</h3><p>Batteries, alternators, starters and electrical repairs.</p></div><div class="card"><div class="num">09</div><h3>Air conditioning</h3><p>A/C checks and repairs.</p></div><div class="card"><div class="num">10</div><h3>Fleet service</h3><p>Maintenance for business vehicles.</p></div><div class="card"><div class="num">11</div><h3>Rust proofing</h3><p>Protection against Ottawa road salt.</p></div></div></div></section>
 
+<section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Jim Dickinson Auto Tech?</h2><ul class="why"><li>We repair only what&#x27;s necessary, with your OK first</li><li>Iron-clad 6 month / 10,000 km warranty on repairs</li><li>Premium quality parts and Certified Class A technicians</li><li>Free loaner car or a ride while we work</li><li>CAA Approved Auto Repair, with a discount for CAA members</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Thursday</td><td>8:00am to 7:00pm</td></tr><tr><td>Friday to Sunday</td><td>Closed</td></tr></table></div></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Free 90-point inspection</h3><p>We check your vehicle top to bottom at no charge.</p></div><div class="step"><h3>Clear report and estimate</h3><p>Every item is marked Notify, Recommended or Severe, with a price before any work.</p></div><div class="step"><h3>Work only with your OK</h3><p>We fix what you approve, road-test it, and hand you the keys.</p></div></div></div></section>
+<section class="x" id="offer"><div class="wrap"><div class="extra"><div><p class="kicker">New customers</p><h2>$20 off your first visit</h2><p style="color:var(--muted);font-size:17px">New to the shop? Save $20 on regularly priced service of $80 or more. CAA members also get a member discount.</p><a class="btn" href="#contact">Book your first visit</a></div><ul><li>One use per new customer</li><li>On regularly priced service of $80 and up</li><li>OEM parts not included</li><li>Free loaner car or a ride while we work</li></ul></div></div></section>
+
+<section id="reviews" class="alt"><div class="wrap"><p class="kicker">Reviews</p><h2>What our customers say</h2><div class="grid"><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Jim does not guess about complicated repairs.&rdquo;</blockquote><figcaption>Andy Reaume</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Knowledgeable, honest proprietor; Very professional businessman.&rdquo;</blockquote><figcaption>Cavell Townley</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;I don&#x27;t consider Jim Dickinson and the auto-techers a company, I consider them part of the family.&rdquo;</blockquote><figcaption>Adrian Butts</figcaption></figure></div></div></section>
+<section id="faq" class="alt"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Is there a warranty on repairs?</summary><p>Yes. Repairs come with our 6 month / 10,000 km warranty.</p></details><details><summary>Will you do work without asking me?</summary><p>No. You get an estimate first, and we only repair what you approve.</p></details><details><summary>Do you offer loaner cars?</summary><p>Yes. We&#x27;ll give you a free loaner car or a ride while we repair your vehicle.</p></details><details><summary>Do you work on hybrids and EVs?</summary><p>Yes. We inspect and repair hybrid and electric vehicles.</p></details><details><summary>What makes do you service?</summary><p>29 makes, including North American, Japanese, Korean and European brands like BMW, Mercedes, Land Rover and Volvo.</p></details><details><summary>Do you give a CAA discount?</summary><p>Yes. We&#x27;re a CAA/AAA Approved Auto Repair facility, and CAA members get a discount.</p></details><details><summary>What are your hours?</summary><p>Monday to Thursday, 8am to 7pm. Closed Friday to Sunday.</p></details></div></section>
 <section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa and surrounding area. Visit us at 1150 Gladstone Ave.</p><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=1150%20Gladstone%20Ave%2C%20Ottawa%2C%20ON%20K1Y%203H6&output=embed" title="Map"></iframe></div></section>
 <section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
-<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
-<a class="line" href="tel:6137216244">&#9742; 613-721-6244</a><a class="line" href="sms:3434516066">&#128172; Text 343-451-6066</a><a class="line" href="mailto:jim@jimdickinsonautotech.com">&#9993; jim@jimdickinsonautotech.com</a><p>1150 Gladstone Ave, Ottawa, ON K1Y 3H6</p></div>
+<div><h2 style="margin-bottom:12px">Get in touch</h2><a class="revlink" href="https://g.page/autorepairottawa">&#9733; See our Google reviews</a><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6137216244">&#9742; 613-721-6244</a><a class="line" href="sms:3434516066">&#128172; Text 343-451-6066</a><a class="line" href="mailto:jim@jimdickinsonautotech.com">&#9993; jim@jimdickinsonautotech.com</a><p>1150 Gladstone Ave, Ottawa, ON K1Y 3H6</p><div class="socials"><a href="https://g.page/autorepairottawa" target="_blank" rel="noopener" aria-label="Jim Dickinson Auto Tech on Google reviews"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 01-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0012 22zM6.4 14a6 6 0 010-3.9V7.5H3.1a10 10 0 000 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 003.1 7.5L6.4 10A6 6 0 0112 5.9z"/></svg>Google reviews</a><a href="https://twitter.com/CarDoctorJim" target="_blank" rel="noopener" aria-label="Jim Dickinson Auto Tech on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.2l-4.9-6.3L5.4 21H2.3l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg>@CarDoctorJim</a></div></div>
 <form onsubmit="return sendQuote(event)">
 <input name="name" placeholder="Your name" required>
 <input name="phone" placeholder="Phone or email" required>
 <textarea name="msg" rows="4" placeholder="Year, make and model, and what&#x27;s going on with your car"></textarea>
 <button class="btn light" type="submit">Send request</button>
 </form></div></div></section>
-<div class="wrap"><footer class="site">&copy; Jim Dickinson Auto Tech &middot; 1150 Gladstone Ave, Ottawa, ON K1Y 3H6</footer></div>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 Jim Dickinson Auto Tech &middot; 1150 Gladstone Ave, Ottawa, ON K1Y 3H6</span><div class="socials"><a href="https://g.page/autorepairottawa" target="_blank" rel="noopener" aria-label="Jim Dickinson Auto Tech on Google reviews"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 01-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0012 22zM6.4 14a6 6 0 010-3.9V7.5H3.1a10 10 0 000 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 003.1 7.5L6.4 10A6 6 0 0112 5.9z"/></svg>Google reviews</a><a href="https://twitter.com/CarDoctorJim" target="_blank" rel="noopener" aria-label="Jim Dickinson Auto Tech on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.2l-4.9-6.3L5.4 21H2.3l7.2-8.3L1.8 3h6.4l4.4 5.8zm-1.1 16.2h1.7L7.4 4.7H5.6z"/></svg>@CarDoctorJim</a></div></div></footer></div>
 <div class="callbar"><a class="btn" href="tel:6137216244">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
 <script>
 function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;

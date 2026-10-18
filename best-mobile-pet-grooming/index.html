@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Best Mobile Pet Grooming | Mobile Pet Grooming in Ottawa</title>
-<meta name="description" content="Mobile and in-home dog and cat grooming across Ottawa since 2002. We come to you.">
+<meta name="description" content="Michelle Best has groomed Ottawa&#x27;s cats and dogs at home since 2002. No car rides, no cages, all-inclusive prices.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
@@ -58,6 +58,32 @@ h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
 form{display:grid;gap:12px}
 input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
 input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
 .callbar .btn{flex:1;padding:12px}
@@ -65,36 +91,43 @@ footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
 @media(min-width:801px){body{padding-bottom:0}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Best Mobile Pet Grooming", "telephone": "613-858-3647", "areaServed": "Ottawa", "email": "michelle@bestpetgrooming.ca", "address": "Orleans, ON", "sameAs": ["https://www.facebook.com/bestmobilegroomerottawa/"]}</script>
 <script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
 </head>
 <body>
 <div class="preview">Sample website made for Best Mobile Pet Grooming by Kevin. Not live yet.</div>
 <nav class="nav"><div class="wrap">
 <a class="logo" href="#top">Best Mobile Pet <span>Grooming</span></a>
-<div class="links"><a href="#services">Services</a><a href="#area">Area</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#area">Area</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
 <a class="btn" href="tel:6138583647">Call 613-858-3647</a>
 </div></nav>
 <header class="hero photo" id="top" style="background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.45)),url(&quot;https://www.bestpetgrooming.ca/images/DogGrooming01.jpg&quot;) center/cover,linear-gradient(135deg,var(--dark),#000)"><div class="wrap">
 <div><div class="eyebrow">Mobile Pet Grooming &middot; Ottawa</div>
-<h1>Your best friend deserves the best grooming</h1><p>Mobile and in-home dog and cat grooming across Ottawa since 2002. We come to you.</p>
-<div class="cta"><a class="btn" href="tel:6138583647">Call 613-858-3647</a><a class="btn ghost" href="#contact">Request a quote</a></div></div>
+<h1>Calm, gentle cat grooming in your own home</h1><p>Michelle Best has groomed Ottawa&#x27;s cats and dogs at home since 2002. No car rides, no cages, all-inclusive prices.</p>
+<div class="cta"><a class="btn" href="tel:6138583647">Call 613-858-3647</a><a class="btn ghost" href="#contact">See prices</a></div><a class="chip" href="#reviews"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>5 from 8 YellowPages reviews</a></div>
 <div class="badge"><img src="https://www.bestpetgrooming.ca/images/BestPetGroomingLogo.png" alt="Best Mobile Pet Grooming logo" onerror="this.parentNode.remove()"></div>
 </div></header>
-<div class="trust"><div class="wrap"><span>Serving Ottawa since 2002</span><span>We come to you</span><span>Dogs &amp; cats</span><span>All-inclusive prices</span></div></div>
-<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Dog grooming</h3><p>Baths, cuts and tidy-ups for every breed and size.</p></div><div class="card"><div class="num">02</div><h3>Cat grooming</h3><p>Gentle grooming for cats, done calmly at home.</p></div><div class="card"><div class="num">03</div><h3>Mobile grooming</h3><p>We bring the grooming to your door.</p></div><div class="card"><div class="num">04</div><h3>In-home grooming</h3><p>Less stress for pets who don&#x27;t love car rides.</p></div><div class="card"><div class="num">05</div><h3>Nail trims</h3><p>Quick, careful nail trims.</p></div></div></div></section>
-<section class="alt"><div class="wrap "><div><p class="kicker">Why choose us</p><h2>Why Best Mobile Pet Grooming?</h2><ul class="why"><li>Serving Ottawa since 2002</li><li>We come to you: no car rides, no cages</li><li>Dogs and cats welcome</li><li>All of Ottawa covered</li></ul></div></div></section>
+<div class="trust"><div class="wrap"><span>Since 2002</span><span>Rated 5/5 on YellowPages</span><span>Fully insured</span><span>Vet recommended</span><span>All-inclusive prices</span></div></div>
+<section id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Meet Michelle</h2><p class="lead">Best Mobile Pet Grooming is run by Michelle Best, who has groomed pets in their own homes across Ottawa since 2002. She specializes in cats and small dogs.</p><p class="lead">Michelle trained at the Canine School of Professional Grooming in Ottawa and under award-winning international master groomer Dawn Mullin, and keeps learning through courses and seminars.</p></div><div class="facts"><div class="fact">Professional grooming school, 2002</div><div class="fact">Advanced Behaviour, 2004</div><div class="fact">Non-Sporting &amp; Terrier Breeds certificate, 2005</div><div class="fact">Advanced Grooming Techniques, 2010</div></div></div></section>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Cat grooming</h3><p>Brushing, trimming and tidy-ups for short, medium and long-haired cats, done calmly at home.</p></div><div class="card"><div class="num">02</div><h3>Lion clips</h3><p>A full lion clip for long-haired or matted cats.</p></div><div class="card"><div class="num">03</div><h3>Mat &amp; pelt removal</h3><p>Gentle removal of mats and pelted coats.</p></div><div class="card"><div class="num">04</div><h3>Dog grooming</h3><p>A full groom for small dogs. Not taking new dog clients right now.</p></div><div class="card"><div class="num">05</div><h3>Senior &amp; anxious pets</h3><p>Patient care at home. Michelle also works with sedated animals.</p></div></div></div></section>
+<section id="prices"><div class="wrap" style="max-width:820px"><p class="kicker">Prices</p><h2>All-inclusive prices</h2><table class="prices"><tr><td>Cat groom, short hair<small>No bath needed</small></td><td>$95</td></tr><tr><td>Cat groom, medium hair</td><td>$105</td></tr><tr><td>Cat groom, long hair</td><td>$110</td></tr><tr><td>Lion clip</td><td>$115</td></tr><tr><td>Mat or pelted-coat removal</td><td>from $30</td></tr><tr><td>Small dog, standard groom<small>Assessment, brushing, ears, nails, hypoallergenic bath, anal glands, blow dry and breed trim. Not taking new dog clients right now.</small></td><td>$95</td></tr></table><p style="color:var(--muted);margin-top:14px">Pay by cash, cheque or e-Transfer. Please give 24 hours&#x27; notice to cancel, or a 50% fee applies.</p></div></section>
+<section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Best Mobile Pet Grooming?</h2><ul class="why"><li>We come to you: no car rides, no cages</li><li>Specializing in cats and small dogs</li><li>Vet recommended, and works with sedated animals</li><li>Fully insured, references available</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Friday</td><td>9:30am to 4pm</td></tr><tr><td>Weekends</td><td>Closed</td></tr><tr><td>Visits</td><td>By appointment</td></tr></table></div></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Text Michelle</h3><p>Text 613-858-3647 with your pet&#x27;s breed, coat and your neighbourhood. Texting gets the fastest reply.</p></div><div class="step"><h3>She comes to you</h3><p>Michelle brings her grooming table. You just have a couple of towels ready.</p></div><div class="step"><h3>About an hour for a cat</h3><p>Your pet stays calm at home. Dogs take about two hours.</p></div></div></div></section>
+
 <section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming01.jpg" alt="Dog grooming in Ottawa" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/CatGrooming03.jpg" alt="Cat with a lion clip" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/MobileGroomer.jpg" alt="Mobile groomer" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming06.jpg" alt="Groomer with a dog" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/CatGrooming01.jpg" alt="Cat grooming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming11.jpg" alt="Dog coat trimming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming02.jpg" alt="Pet grooming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming07.jpg" alt="In-home grooming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/CatGrooming04.jpg" alt="Cat nail trimming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming09.jpg" alt="Dog brushing and cleaning" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/DogGrooming03.jpg" alt="Dog grooming" onerror="dropImg(this)"><img loading="lazy" src="https://www.bestpetgrooming.ca/images/CatGrooming02.jpg" alt="Cat grooming" onerror="dropImg(this)"></div></div></section>
-<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">All of Ottawa, including Orleans, Barrhaven, the Glebe, Westboro and Beacon Hill.</p></div></section>
+<section id="reviews" class="alt"><div class="wrap"><p class="kicker">Reviews</p><h2>What customers say</h2><div class="revhead"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span>5 out of 5 from 8 YellowPages reviews</span><a href="https://www.yellowpages.ca/bus/Ontario/Best-Mobile-Pet-Grooming/3880098.html" target="_blank" rel="noopener" style="color:var(--accent)">Read them all</a></div><div class="grid"><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Michelle really is a dog whisperer. She has a calm, gentle demeanour that&#x27;s perfect for my dogs.&rdquo;</blockquote><figcaption>YellowPages review</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Michelle has been grooming our dogs for over ten years and we always get compliments on their appearance.&rdquo;</blockquote><figcaption>YellowPages review</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;The only way to have my dog groomed - at my home in a safe and comfortable environment.&rdquo;</blockquote><figcaption>YellowPages review</figcaption></figure></div></div></section>
+<section id="faq" class="alt"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Are you taking new clients?</summary><p>Yes for cats. Michelle isn&#x27;t taking new dog clients at the moment.</p></details><details><summary>How much does it cost?</summary><p>Cats are $95 (short hair), $105 (medium) or $110 (long). Lion clips are $115 and mat removal starts at $30. Prices are all-inclusive.</p></details><details><summary>How long does a groom take?</summary><p>About an hour for a cat and about two hours for a dog.</p></details><details><summary>What do I need to provide?</summary><p>Just a couple of towels. Michelle brings her own grooming table.</p></details><details><summary>How often should my pet be groomed?</summary><p>About every 3 months for cats and every 8 weeks for dogs.</p></details><details><summary>How do I pay?</summary><p>Cash, cheque or e-Transfer. No credit cards.</p></details><details><summary>Which areas do you cover?</summary><p>Across Ottawa, including Orleans, Gloucester, Nepean, Barrhaven and Bells Corners.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Across Ottawa, including Orleans, Gloucester, the Glebe, Westboro, Beacon Hill, Nepean, Barrhaven and Bells Corners.</p></div></section>
 <section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
 <div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
-<a class="line" href="tel:6138583647">&#9742; 613-858-3647</a><a class="line" href="mailto:michelle@bestpetgrooming.ca">&#9993; michelle@bestpetgrooming.ca</a><p>Orleans, ON</p></div>
+<a class="line" href="tel:6138583647">&#9742; 613-858-3647</a><a class="line" href="sms:6138583647">&#128172; Text 613-858-3647</a><a class="line" href="mailto:michelle@bestpetgrooming.ca">&#9993; michelle@bestpetgrooming.ca</a><p>Orleans, ON</p><div class="socials"><a href="https://www.facebook.com/bestmobilegroomerottawa/" target="_blank" rel="noopener" aria-label="Best Mobile Pet Grooming on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a></div></div>
 <form onsubmit="return sendQuote(event)">
 <input name="name" placeholder="Your name" required>
 <input name="phone" placeholder="Phone or email" required>
-<textarea name="msg" rows="4" placeholder="Your pet&#x27;s breed, size, and your neighbourhood"></textarea>
+<textarea name="msg" rows="4" placeholder="Your pet&#x27;s breed, coat length, and your neighbourhood"></textarea>
 <button class="btn light" type="submit">Send request</button>
 </form></div></div></section>
-<div class="wrap"><footer class="site">&copy; Best Mobile Pet Grooming &middot; Orleans, ON</footer></div>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 Best Mobile Pet Grooming &middot; Orleans, ON</span><div class="socials"><a href="https://www.facebook.com/bestmobilegroomerottawa/" target="_blank" rel="noopener" aria-label="Best Mobile Pet Grooming on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a></div></div></footer></div>
 <div class="callbar"><a class="btn" href="tel:6138583647">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
 <script>
 function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;

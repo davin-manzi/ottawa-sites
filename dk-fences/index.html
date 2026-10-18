@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>D.K. Fences | Fence Builders in Ottawa</title>
-<meta name="description" content="Cedar, pressure-treated and chain link fences built properly, from Kanata to Orleans and South Ottawa. We do the work, so you don&#x27;t have to.">
+<meta name="description" content="Cedar, pressure-treated and chain link fences and decks, built by Dave and his crew, never subcontracted. Free on-site quotes from Kanata to Orleans and South Ottawa.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -58,6 +58,32 @@ h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
 form{display:grid;gap:12px}
 input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
 input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
 .callbar .btn{flex:1;padding:12px}
@@ -65,28 +91,35 @@ footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 .split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
 @media(min-width:801px){body{padding-bottom:0}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "D.K. Fences", "telephone": "613-797-7688", "areaServed": "Ottawa", "email": "dave@dkfences.com", "address": "Osgoode, ON"}</script>
 <script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
 </head>
 <body>
 <div class="preview">Sample website made for D.K. Fences by Kevin. Not live yet.</div>
 <nav class="nav"><div class="wrap">
 <a class="logo" href="#top">D.K. <span>Fences</span></a>
-<div class="links"><a href="#services">Services</a><a href="#contact">Contact</a></div>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
 <a class="btn" href="tel:6137977688">Call 613-797-7688</a>
 </div></nav>
 <header class="hero photo" id="top" style="background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.45)),url(&quot;https://lh3.googleusercontent.com/Ind8bnGl9hOVB0p7gWRRmirG8BGOxRBIHPzZnneHD3xmS-lxw3G4gH9FDWsmLGJOFX8oHnC6sSTnFRfXe1aYea4sMoEha_PA0xgBNNzGPjovKihovxAcDA=s1600&quot;) center/cover,linear-gradient(135deg,var(--dark),#000)"><div class="wrap">
 <div><div class="eyebrow">Fence Builders &middot; Ottawa</div>
-<h1>Solid, good-looking fences across Ottawa</h1><p>Cedar, pressure-treated and chain link fences built properly, from Kanata to Orleans and South Ottawa. We do the work, so you don&#x27;t have to.</p>
-<div class="cta"><a class="btn" href="tel:6137977688">Call 613-797-7688</a><a class="btn ghost" href="#contact">Request a quote</a></div></div>
+<h1>Fences and decks across Ottawa since 2003</h1><p>Cedar, pressure-treated and chain link fences and decks, built by Dave and his crew, never subcontracted. Free on-site quotes from Kanata to Orleans and South Ottawa.</p>
+<div class="cta"><a class="btn" href="tel:6137977688">Call 613-797-7688</a><a class="btn ghost" href="#contact">Get a free quote</a></div></div>
 <div class="badge"><svg viewBox="0 0 24 24"><path d="M4 21V7l2-3 2 3v14 M10 21V7l2-3 2 3v14 M16 21V7l2-3 2 3v14 M2 11h20 M2 17h20"/></svg></div>
 </div></header>
-<div class="trust"><div class="wrap"><span>Cedar fences</span><span>Pressure-treated fences</span><span>Chain link fences</span><span>Kanata to Orleans</span></div></div>
-<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Cedar fences</h3><p>Classic, natural wood privacy fences that age beautifully.</p></div><div class="card"><div class="num">02</div><h3>Pressure-treated fences</h3><p>Strong, budget-friendly fencing made to last through Ottawa winters.</p></div><div class="card"><div class="num">03</div><h3>Chain link fences</h3><p>Practical fencing for yards, pets and properties.</p></div></div></div></section>
-<section class="alt"><div class="wrap "><div><p class="kicker">Why choose us</p><h2>Why D.K. Fences?</h2><ul class="why"><li>Customer satisfaction is our first priority</li><li>Local Ottawa fence builder based in Osgoode</li><li>Cedar, pressure-treated and chain link</li><li>Serving Kanata, Orleans and South Ottawa</li></ul></div></div></section>
+<div class="trust"><div class="wrap"><span>Since 2003</span><span>BBB rating: A+</span><span>No subcontractors</span><span>Free on-site quotes</span><span>Quality guaranteed</span></div></div>
+<section id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>A small fence company that does it right</h2><p class="lead">D.K. Fences is owned by Dave Lemp and has built fences and decks around Ottawa since 2003. As a small company, we give every fence individual care at a competitive rate.</p><p class="lead">We never subcontract, we clean up construction debris every day, and we treat your yard like our own.</p></div><div class="facts"><div class="fact">Owner: Dave Lemp</div><div class="fact">In business since 2003</div><div class="fact">A+ rating with the BBB</div><div class="fact">No subcontractors, ever</div></div></div></section>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid"><div class="card"><div class="num">01</div><h3>Cedar fences</h3><p>Privacy, lattice, jailbar lattice, scalloped and horizontal-board styles, plus curved gates.</p></div><div class="card"><div class="num">02</div><h3>Pressure-treated fences</h3><p>Privacy and semi-privacy fences that are strong and budget-friendly.</p></div><div class="card"><div class="num">03</div><h3>Chain link fences</h3><p>Practical fencing for yards, pets and properties.</p></div><div class="card"><div class="num">04</div><h3>Decks</h3><p>Cedar and pressure-treated decks, two-tier decks, railings, wrap-around stairs and privacy screens.</p></div><div class="card"><div class="num">05</div><h3>Gates</h3><p>Matching gates, including curved gates and gates with lattice inserts.</p></div></div></div></section>
 
-<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa, from Kanata to Orleans and throughout South Ottawa, including Osgoode.</p></div></section>
+<section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why D.K. Fences?</h2><ul class="why"><li>We do NOT subcontract: Dave&#x27;s own crew builds every fence</li><li>All construction debris removed every day</li><li>Free, no-obligation quotes on site</li><li>Quality guaranteed, at reasonable prices</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Friday</td><td>8am to 7pm</td></tr><tr><td>Saturday and Sunday</td><td>9am to 6pm</td></tr></table></div></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Call or send a request</h3><p>Tell us the fence or deck you want, the rough length and your neighbourhood.</p></div><div class="step"><h3>Free on-site quote</h3><p>We come out, measure, and help you pick the right material. No obligation.</p></div><div class="step"><h3>We build and clean up</h3><p>Our own crew builds it, with debris cleared away every day.</p></div></div></div></section>
+<section class="x" id="materials"><div class="wrap"><div class="extra"><div><p class="kicker">Choosing a fence</p><h2>Cedar, pressure-treated or chain link?</h2><p style="color:var(--muted);font-size:17px">Not sure which is right for your yard? Here&#x27;s the quick version. Dave will go over it with you during your free on-site quote.</p><a class="btn" href="#contact">Get a free quote</a></div><ul><li>Cedar: natural look, many styles (privacy, lattice, scalloped, horizontal)</li><li>Pressure-treated: strong and the most budget-friendly wood option</li><li>Chain link: practical and low-maintenance, great for pets</li><li>Decks to match, in cedar or pressure-treated</li></ul></div></div></section>
+
+
+<section id="faq" class="alt"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Are quotes free?</summary><p>Yes. Quotes are free, done on site, and there&#x27;s no obligation.</p></details><details><summary>Do you use subcontractors?</summary><p>No. Our own crew does all the work.</p></details><details><summary>What materials do you work with?</summary><p>Cedar, pressure-treated wood and chain link, for both fences and decks.</p></details><details><summary>Do you build decks too?</summary><p>Yes: decks, two-tier decks, railings, stairs and privacy screens.</p></details><details><summary>What areas do you serve?</summary><p>Ottawa from Kanata to Orleans, plus South Ottawa including Barrhaven and Osgoode.</p></details><details><summary>Do you clean up after the job?</summary><p>Yes. We remove all construction debris every day.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa, from Kanata to Orleans and throughout South Ottawa, including Barrhaven and Osgoode.</p></div></section>
 <section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
-<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
+<div><h2 style="margin-bottom:12px">Get in touch</h2><a class="revlink" href="https://www.bbb.org/ca/on/nepean/profile/fence-contractors/dk-fences-0117-63145">&#9733; See our A+ BBB rating</a><p>Tell us what you need and we'll get back to you quickly.</p>
 <a class="line" href="tel:6137977688">&#9742; 613-797-7688</a><a class="line" href="mailto:dave@dkfences.com">&#9993; dave@dkfences.com</a><p>Osgoode, ON</p></div>
 <form onsubmit="return sendQuote(event)">
 <input name="name" placeholder="Your name" required>
@@ -94,7 +127,7 @@ footer.site{color:var(--muted);font-size:14px;padding:30px 0}
 <textarea name="msg" rows="4" placeholder="Fence type, rough length, and your neighbourhood"></textarea>
 <button class="btn light" type="submit">Send request</button>
 </form></div></div></section>
-<div class="wrap"><footer class="site">&copy; D.K. Fences &middot; Osgoode, ON</footer></div>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 D.K. Fences &middot; Osgoode, ON</span></div></footer></div>
 <div class="callbar"><a class="btn" href="tel:6137977688">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
 <script>
 function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
