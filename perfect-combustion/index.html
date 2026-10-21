@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perfect Combustion | Heating &amp; Cooling in Ottawa</title>
+<meta name="description" content="Furnaces, air conditioners, hot water, ductwork and gas hook-ups for Ottawa, Gatineau and area, with a 1-year parts and labour warranty and service in French.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#d9480f;--accent2:#ffa94d;--ink:#1b1f24;--muted:#5b6470;--bg:#fff;--soft:#f4f5f7;--dark:#121518;--r:2px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:64px}
+h1,h2,h3{font-family:'Oswald',Impact,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:#000;color:#fff;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eceef1}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:16px}
+.logo{font-family:'Oswald',Impact,sans-serif;font-weight:800;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:40px;width:auto}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-weight:600;font-size:15px}.links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:var(--r);border:2px solid var(--accent);cursor:pointer;font-size:16px;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.light{background:#fff;color:var(--dark);border-color:#fff}
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,var(--accent2),transparent 60%),linear-gradient(135deg,var(--dark),#000);overflow:hidden}
+.hero .wrap{position:relative;padding:84px 20px 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin:0 0 18px}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
+.badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--accent);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
+.trust span:before{content:"\2713";margin-right:8px;opacity:.85}
+section{padding:76px 0}section.alt{background:var(--soft)}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.card .num{font-family:'Oswald',Impact,sans-serif;font-weight:800;font-size:15px;color:var(--accent);margin-bottom:10px;letter-spacing:.05em}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.why li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.why li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e8eaee}
+.hours td{padding:12px 18px;border-bottom:1px solid #eef0f3}.hours td:last-child{text-align:right;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#e9ebee}
+.map{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:22px}
+.contact{background:var(--dark);color:#fff;border-radius:calc(var(--r) * 1.5);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{color:rgba(255,255,255,.75)}.contact a.line{display:block;font-size:18px;font-weight:700;text-decoration:none;margin:8px 0;overflow-wrap:anywhere}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:560px){.prices td{padding:12px}.prices td:last-child{white-space:normal;min-width:84px}.prices td:first-child{overflow-wrap:anywhere}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site{color:var(--muted);font-size:14px;padding:30px 0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
+.callbar .btn{flex:1;padding:12px}
+@media(max-width:800px){.links{display:none}.hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}.badge{display:none}
+.split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
+@media(min-width:801px){body{padding-bottom:0}}
+
+:root{--soft:#f1f2f4}
+h1,h2,h3{text-transform:uppercase;letter-spacing:.01em;font-weight:700}
+.card h3,.step h3{font-family:'Oswald',sans-serif;font-weight:500;letter-spacing:.02em}
+.logo{text-transform:uppercase;letter-spacing:.03em}
+.nav{background:#121518;border-bottom:3px solid var(--accent)}.nav .links a{color:#c9ced4}.logo{color:#fff}
+.hero.hf{min-height:min(88vh,760px);display:flex;align-items:flex-end;clip-path:polygon(0 0,100% 0,100% 92%,0 100%)}
+.hero.hf .wrap{grid-template-columns:1fr;padding:120px 20px 120px;width:100%}
+.hero.hf h1{font-size:clamp(44px,7.5vw,96px);line-height:.98;max-width:14ch}
+.hero .eyebrow{background:var(--accent);color:#fff;padding:6px 12px;letter-spacing:.14em}
+.btn{text-transform:uppercase;letter-spacing:.06em;font-size:15px}
+.trust{background:transparent;color:var(--ink);margin-top:-40px;position:relative;z-index:2}
+.trust .wrap{background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.12);border-top:4px solid var(--accent);justify-content:space-around;padding:22px;text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+.trust span:before{color:var(--accent);opacity:1}
+.kicker{display:flex;align-items:center;gap:12px}.kicker:before{content:"";width:34px;height:3px;background:var(--accent)}
+.grid.svc{counter-reset:none}
+.grid.svc .card{border:0;border-left:4px solid var(--accent);background:var(--soft);padding:28px}
+.grid.svc .card .num{font-family:'Oswald',sans-serif;font-size:44px;line-height:1;color:var(--accent);opacity:.9}
+section.why-dark{background:#121518;color:#fff}section.why-dark .why li{color:#e7e9ec}
+section.why-dark .hours{background:#1b1f23;border-color:#2a2f35;color:#fff}section.why-dark .hours td{border-color:#2a2f35}
+.step{border:0;border-top:4px solid var(--ink)}.step:before{border-radius:2px}
+.gallery img{border-radius:0}
+.contact{border-top:6px solid var(--accent)}
+.about-img{width:100%;aspect-ratio:3/2;object-fit:cover;margin-bottom:14px}
+@media(max-width:800px){.hero.hf{min-height:auto}.hero.hf .wrap{padding:80px 20px 90px}.trust{margin-top:-24px}.trust .wrap{margin:0 12px;padding:16px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HVACBusiness", "name": "Perfect Combustion", "areaServed": "Ottawa", "telephone": "613-291-1986", "email": "moncionmroger@sympatico.ca", "address": "Stittsville, ON"}</script>
+<script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
+</head>
+<body>
+<div class="preview">Sample website made for Perfect Combustion by Kevin. Not live yet.</div>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">Perfect <span>Combustion</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:6132911986">Call 613-291-1986</a>
+</div></nav>
+<header class="hero hf" id="top"><div class="wrap">
+<div class="htext"><div class="eyebrow">Heating &amp; Cooling &middot; Ottawa</div>
+<h1>Furnace and AC service in Ottawa since 1993</h1><p>Furnaces, air conditioners, hot water, ductwork and gas hook-ups for Ottawa, Gatineau and area, with a 1-year parts and labour warranty and service in French.</p>
+<div class="cta"><a class="btn" href="tel:6132911986">Call 613-291-1986</a><a class="btn ghost" href="#contact">Get a free estimate</a></div></div>
+
+</div></header>
+<div class="trust"><div class="wrap"><span>Since 1993</span><span>1-year parts &amp; labour warranty</span><span>Free replacement estimates</span><span>Service in French</span><span>CMMTQ member</span></div></div>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid svc"><div class="card"><div class="num">01</div><h3>Furnaces</h3><p>Installation, maintenance and repair, including high-efficiency Rheem furnaces.</p></div><div class="card"><div class="num">02</div><h3>Air conditioning</h3><p>Installation, maintenance and repair, plus removal, moving and reinstallation.</p></div><div class="card"><div class="num">03</div><h3>Hot water</h3><p>Hot water tanks and tankless systems, gas and electric, installed and serviced.</p></div><div class="card"><div class="num">04</div><h3>Boilers</h3><p>Boiler installation, including Weil-McLain.</p></div><div class="card"><div class="num">05</div><h3>Ductwork</h3><p>Installation, maintenance and repair, including in new construction.</p></div><div class="card"><div class="num">06</div><h3>Gas hook-ups</h3><p>Stoves, dryers, barbecues and tankless water heaters connected safely.</p></div><div class="card"><div class="num">07</div><h3>Heating extras</h3><p>Garage heaters, fireplace installation, humidifiers and air exchangers.</p></div><div class="card"><div class="num">08</div><h3>Furnace agreements</h3><p>Regular service and an annual cleaning at a competitive price.</p></div></div></div></section>
+<section class="why-dark"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Perfect Combustion?</h2><ul class="why"><li>Serving Ottawa since 1993</li><li>1-year warranty on all parts and labour</li><li>Free estimates on furnace and AC replacements</li><li>Service in English and French</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Every day</td><td>24 hours, call for service</td></tr></table></div></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Call us</h3><p>Call 613-291-1986, any time of day, or 819-595-3238 for service in French.</p></div><div class="step"><h3>Free estimate</h3><p>Replacing a furnace or air conditioner? We&#x27;ll give you a free estimate.</p></div><div class="step"><h3>Installed and warrantied</h3><p>We do the work, and all parts and labour come with a 1-year warranty.</p></div></div></div></section>
+<section class="alt" id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Ottawa heating and cooling since 1993</h2><p class="lead">Perfect Combustion has been doing furnace, cooling and heating work in Ottawa since 1993. We have a reputation for quality service at lower prices.</p><p class="lead">We install, maintain and repair furnaces, air conditioners, hot water systems, boilers and ductwork, and we hook up gas appliances. Service is available in English and French across Ottawa, Gatineau and the surrounding areas.</p></div><div class="facts"><div class="fact">In business since 1993</div><div class="fact">Member of the CMMTQ</div><div class="fact">Rheem furnaces with a 10-year parts warranty</div><div class="fact">Bilingual service, 613 and 819 lines</div></div></div></section>
+<section class="x" id="furnace-season"><div class="wrap"><div class="extra"><div><p class="kicker">Heating season</p><h2>Get your furnace ready before the cold</h2><p style="color:var(--muted);font-size:17px">Book your furnace service and annual cleaning now, or ask about a free estimate on a new high-efficiency Rheem furnace.</p><a class="btn" href="tel:6132911986">Call 613-291-1986</a></div><ul><li>Furnace maintenance and annual cleaning</li><li>Free estimates on furnace replacements</li><li>Rheem furnaces up to 95% efficient</li><li>1-year parts and labour warranty</li></ul></div></div></section>
+<section class="alt" id="faq"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Do you give free estimates?</summary><p>Yes, for furnace and air conditioner replacements.</p></details><details><summary>Is there a warranty?</summary><p>All of our labour and parts come with a 1-year warranty. Rheem furnaces also come with a 10-year parts warranty.</p></details><details><summary>When can I call?</summary><p>You can call us 24 hours a day, 7 days a week.</p></details><details><summary>Do you serve Gatineau?</summary><p>Yes. We serve Ottawa, Gatineau and the surrounding areas, and offer service in French at 819-595-3238.</p></details><details><summary>What furnaces do you install?</summary><p>We install Rheem furnaces, which use a DC motor and two-stage operation for up to 95% efficiency.</p></details><details><summary>Can you hook up my gas stove or barbecue?</summary><p>Yes. We do gas hook-ups for stoves, dryers, barbecues and tankless water heaters.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa, Gatineau and the surrounding areas.</p></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6132911986">&#9742; 613-291-1986</a><a class="line" href="mailto:moncionmroger@sympatico.ca">&#9993; moncionmroger@sympatico.ca</a><p>Stittsville, ON</p></div>
+<form onsubmit="return sendQuote(event)">
+<input name="name" placeholder="Your name" required>
+<input name="phone" placeholder="Phone or email" required>
+<textarea name="msg" rows="4" placeholder="Your furnace, AC or water heater, and what&#x27;s going on"></textarea>
+<button class="btn light" type="submit">Send request</button>
+</form></div></div></section>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 Perfect Combustion &middot; Stittsville, ON &middot; Website by OttawaSites</span></div></footer></div>
+<div class="callbar"><a class="btn" href="tel:6132911986">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
+<script>
+function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
+location.href="mailto:moncionmroger@sympatico.ca?subject="+encodeURIComponent("Quote request from website")+"&body="+encodeURIComponent(b);return false}
+</script>
+</body>
+</html>
