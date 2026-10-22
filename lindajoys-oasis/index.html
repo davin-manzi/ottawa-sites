@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LINDAJOY&#x27;s Oasis | Makeup, Nails and Esthetics in Stittsville</title>
+<meta name="description" content="Bridal and photo makeup, gel nails, facials, pedicures and theatre makeup in Stittsville, with Canadian skin care and Italian cosmetics.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#8a3f86;--accent2:#efc6ea;--ink:#1b1f24;--muted:#5b6470;--bg:#fff;--soft:#f4f5f7;--dark:#0d1117;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:64px}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:#000;color:#fff;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eceef1}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:16px}
+.logo{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:800;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:40px;width:auto}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-weight:600;font-size:15px}.links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:var(--r);border:2px solid var(--accent);cursor:pointer;font-size:16px;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.light{background:#fff;color:var(--dark);border-color:#fff}
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,var(--accent2),transparent 60%),linear-gradient(135deg,var(--dark),#000);overflow:hidden}
+.hero .wrap{position:relative;padding:84px 20px 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin:0 0 18px}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
+.badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--accent);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
+.trust span:before{content:"\2713";margin-right:8px;opacity:.85}
+section{padding:76px 0}section.alt{background:var(--soft)}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.card .num{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:800;font-size:15px;color:var(--accent);margin-bottom:10px;letter-spacing:.05em}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.why li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.why li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e8eaee}
+.hours td{padding:12px 18px;border-bottom:1px solid #eef0f3}.hours td:last-child{text-align:right;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#e9ebee}
+.map{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:22px}
+.contact{background:var(--dark);color:#fff;border-radius:calc(var(--r) * 1.5);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{color:rgba(255,255,255,.75)}.contact a.line{display:block;font-size:18px;font-weight:700;text-decoration:none;margin:8px 0;overflow-wrap:anywhere}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:560px){.prices td{padding:12px}.prices td:last-child{white-space:normal;min-width:84px}.prices td:first-child{overflow-wrap:anywhere}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site{color:var(--muted);font-size:14px;padding:30px 0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
+.callbar .btn{flex:1;padding:12px}
+@media(max-width:800px){.links{display:none}.hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}.badge{display:none}
+.split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
+@media(min-width:801px){body{padding-bottom:0}}
+
+h1,h2{font-weight:700;letter-spacing:-.035em}
+.hero.hp{background:var(--accent);padding:0}
+.hero.hp .wrap{max-width:none;padding:0;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;min-height:min(80vh,680px)}
+.hero.hp .htext{padding:80px max(20px,calc((100vw - 1100px)/2 + 20px)) 80px max(20px,calc((100vw - 1100px)/2 + 20px));padding-right:48px;display:flex;flex-direction:column;justify-content:center}
+.hero.hp h1{font-size:clamp(38px,5vw,66px)}
+.hero.hp p{color:rgba(255,255,255,.88)}
+.hero.hp .eyebrow{color:#fff;opacity:.85}
+.hero.hp .btn{background:#fff;color:var(--accent);border-color:#fff}
+.hero.hp .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.hp-media{position:relative;min-height:320px}
+.hp-media img,.hp-media .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hp-media .art{display:grid;place-items:center;background:var(--dark)}
+.hp-media .art svg{width:38%;fill:none;stroke:var(--accent2);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--dark)}.trust span:before{color:var(--accent2);opacity:1}
+.grid.svc{grid-template-columns:repeat(3,1fr)}
+.grid.svc .card:first-child{grid-column:span 2;background:var(--dark);color:#fff;border-color:var(--dark)}
+.grid.svc .card:first-child p{color:rgba(255,255,255,.75)}
+.grid.svc .card:first-child .num{color:var(--accent2)}
+.grid.svc .card .num{font-family:'Space Grotesk',sans-serif;font-size:13px;border:1px solid currentColor;display:inline-block;padding:3px 9px;border-radius:999px}
+.card,.step,.rev{border-color:#e3e6ea}
+.kicker{font-family:'Space Grotesk',sans-serif}
+.about-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:14px}
+@media(max-width:800px){.hero.hp .wrap{grid-template-columns:1fr;min-height:0}.hero.hp .htext{padding:56px 20px}.hp-media{min-height:260px}
+.grid.svc{grid-template-columns:1fr}.grid.svc .card:first-child{grid-column:auto}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BeautySalon", "name": "LINDAJOY's Oasis", "areaServed": "Stittsville", "telephone": "613-725-5798", "email": "info@lindajoysoasis.ca", "address": "Stittsville, ON"}</script>
+<script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
+</head>
+<body>
+<div class="preview">Sample website made for LINDAJOY&#x27;s Oasis by Kevin. Not live yet.</div>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">LINDAJOY&#x27;s <span>Oasis</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#area">Area</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:6137255798">Call 613-725-5798</a>
+</div></nav>
+<header class="hero hp" id="top"><div class="wrap">
+<div class="htext"><div class="eyebrow">Makeup, Nails and Esthetics &middot; Stittsville</div>
+<h1>Wedding-day makeup and nails by a 21-year pro</h1><p>Bridal and photo makeup, gel nails, facials, pedicures and theatre makeup in Stittsville, with Canadian skin care and Italian cosmetics.</p>
+<div class="cta"><a class="btn" href="tel:6137255798">Call 613-725-5798</a><a class="btn ghost" href="#contact">Send a message</a></div></div>
+<div class="hp-media"><div class="art"><svg viewBox="0 0 24 24"><path d="M9 2h6v5H9z M7 7h10l1 4v9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-9z"/></svg></div><img src="https://static.wixstatic.com/media/f5fd5b_aabfa68bca3c44ba8226a2151de9d0ca~mv2.jpg/v1/fill/w_571,h_640,al_c,q_85,enc_avif,quality_auto/PIC_WEDDING%20Application_bridesmaid%20%20may%20.jpg" alt="LINDAJOY&#x27;s Oasis" onerror="this.remove()"></div>
+</div></header>
+<div class="trust"><div class="wrap"><span>21+ years as a cosmetician</span><span>19+ years as a nail technician</span><span>Versailles Academy graduate</span><span>Bride packages from $75</span><span>By appointment, 7 days</span></div></div>
+<section id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Beauty for every occasion</h2><p class="lead">Whether it&#x27;s a wedding, private lessons or date night, LINDAJOY&#x27;s Oasis offers a complete line of beauty services. A graduate of Versailles Academy in Ottawa, the owner has been a professional cosmetician for over 21 years and a nail technician for over 19.</p><p class="lead">Her career began with places like the Chateau Laurier and public fashion shows, and she has given seminars in high schools and worked with women&#x27;s crisis centres and Big Sisters. She uses fine Canadian skin care and professional, cruelty-free cosmetics from Italy.</p></div><div class="facts"><img src="https://static.wixstatic.com/media/f5fd5b_221903ac640544359bfe8cbe4ca249c6~mv2.jpg/v1/fill/w_407,h_543,al_c,lg_1,q_80,enc_avif,quality_auto/wedding-bride%202_edited_edited.jpg" alt="LINDAJOY&#x27;s Oasis" class="about-img" loading="lazy" onerror="this.remove()"><div class="fact">21+ years as a cosmetician</div><div class="fact">19+ years in nails</div><div class="fact">Versailles Academy graduate</div><div class="fact">Céla and Kedem skin care</div></div></div></section>
+<section class="alt" id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid svc"><div class="card"><div class="num">01</div><h3>Bridal makeup</h3><p>A one-on-one bride consultation and trial, then flawless photo makeup for the whole party.</p></div><div class="card"><div class="num">02</div><h3>Gel artificial nails</h3><p>French or standard tips, gel overlays, gel polish and refills.</p></div><div class="card"><div class="num">03</div><h3>Nail art</h3><p>Custom art on fingers or toes, with rhinestones and decals.</p></div><div class="card"><div class="num">04</div><h3>Facials</h3><p>Winter and summer facials with Dead Sea based products.</p></div><div class="card"><div class="num">05</div><h3>Pedicures</h3><p>Regular pedicures plus a diabetic foot pedicure package.</p></div><div class="card"><div class="num">06</div><h3>Prom and event makeup</h3><p>Prom, photo shoot and holiday party makeup matched to your outfit.</p></div><div class="card"><div class="num">07</div><h3>Theatre and Halloween makeup</h3><p>Creatures, characters, wax and latex effects for Halloween, Comic-Con and the stage.</p></div><div class="card"><div class="num">08</div><h3>Children&#x27;s face painting</h3><p>Face painting at your party, on location in Ottawa West.</p></div></div></div></section>
+<section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://static.wixstatic.com/media/f5fd5b_221903ac640544359bfe8cbe4ca249c6~mv2.jpg/v1/fill/w_407,h_543,al_c,lg_1,q_80,enc_avif,quality_auto/wedding-bride%202_edited_edited.jpg" alt="Bridal makeup by LINDAJOY&#x27;s Oasis" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/f5fd5b_81fcb38f770b4799b50417b8b0f0210e~mv2.jpg/v1/fill/w_337,h_461,al_c,lg_1,q_80,enc_avif,quality_auto/wedding%20bride%202024_edited.jpg" alt="2024 bride with makeup by LINDAJOY&#x27;s Oasis" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/f5fd5b_c5aeb0d3d48c4f2cabd6348ad2c88a4b~mv2.jpg/v1/crop/x_0,y_117,w_298,h_407,q_80,enc_avif,quality_auto/f5fd5b_c5aeb0d3d48c4f2cabd6348ad2c88a4b~mv2.jpg" alt="Wedding makeup application" onerror="dropImg(this)"></div></div></section>
+<section class="alt"><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why LINDAJOY&#x27;s Oasis?</h2><ul class="why"><li>Professional cosmetician for over 21 years</li><li>Nail technician for over 19 years</li><li>Versailles Academy graduate</li><li>Cruelty-free Cinecitta cosmetics from Italy</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Friday</td><td>By appointment</td></tr><tr><td>Saturday</td><td>10:30am to 6:30pm, by appointment</td></tr><tr><td>Sunday</td><td>10:30am to 6:30pm, by appointment</td></tr></table></div></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Call or send a message</h3><p>Call 613-725-5798 or use the form to book your appointment.</p></div><div class="step"><h3>Meet one-on-one</h3><p>Brides start with a private consultation and trial a month before the big day.</p></div><div class="step"><h3>Look your best</h3><p>Arrive for your service, or have face painting brought to your party.</p></div></div></div></section>
+<section class="alt" id="prices"><div class="wrap" style="max-width:820px"><p class="kicker">Prices</p><h2>Wedding party prices</h2><table class="prices"><tr><td>Bride package<small>Photo makeup, optional gel nails with art, facial, eyebrow arching</small></td><td>$100</td></tr><tr><td>Bride makeup and manicure</td><td>$75</td></tr><tr><td>Bridesmaid or maid of honour</td><td>$60</td></tr><tr><td>Mother of the bride</td><td>$35</td></tr><tr><td>Grandmother of the bride</td><td>$25</td></tr><tr><td>Guest makeup (non-photo)</td><td>$20</td></tr><tr><td>False lashes</td><td>$15</td></tr><tr><td>Prom makeup</td><td>$35</td></tr><tr><td>Manicure<small>gel polish $5 extra</small></td><td>$25</td></tr><tr><td>Gel nails, French tips<small>refill $35</small></td><td>$70</td></tr><tr><td>Regular pedicure</td><td>$35</td></tr><tr><td>Winter facial</td><td>$50</td></tr></table><p style="color:var(--muted);margin-top:14px">A 30% deposit books your wedding. Prices for other services are before 13% HST.</p></div></section>
+<section class="x" id="halloween"><div class="wrap"><div class="extra"><div><p class="kicker">Halloween</p><h2>Halloween and convention makeup</h2><p style="color:var(--muted);font-size:17px">Animals, creatures, characters and fantasy looks with wax and latex effects. Star Trek, Star Wars, Avatar, all the fun stuff.</p><a class="btn" href="tel:6137255798">Book your look</a></div><ul><li>Basic theatre makeup $10</li><li>With blood $15</li><li>With wax $35</li><li>Children&#x27;s face painting $5 per child, minimum 5</li><li>Signed agreement required for effects makeup</li></ul></div></div></section><section class="x" id="holiday"><div class="wrap"><div class="extra"><div><p class="kicker">Holiday parties</p><h2>Christmas and New Year&#x27;s makeup</h2><p style="color:var(--muted);font-size:17px">Look polished for your formal Christmas or New Year&#x27;s event.</p><a class="btn" href="#contact">Book holiday makeup</a></div><ul><li>Formal event makeup $25</li><li>False lashes from $5</li></ul></div></div></section>
+<section class="alt" id="faq"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>How do I book?</summary><p>Call 613-725-5798 or send a message through the contact form. All services are by appointment.</p></details><details><summary>How do wedding bookings work?</summary><p>The first meeting is one-on-one with the bride. We build a price package together, and a 30% deposit secures your date. Group bookings include a consultation and trial a month before.</p></details><details><summary>How much is bridal makeup?</summary><p>The bride package is $100 and includes photo makeup, an optional gel nail set with art, a facial and eyebrow arching. Bridesmaids are $60 each.</p></details><details><summary>Do you do Halloween makeup?</summary><p>Yes. Theatre and Comic-Con makeup starts at $10, $15 with blood and $35 with wax.</p></details><details><summary>What products do you use?</summary><p>Canadian skin care from Céla and Kedem, and professional, cruelty-free Cinecitta cosmetics from Italy.</p></details><details><summary>Do prices include tax?</summary><p>Prices for our other services (nails, facials, prom and event makeup) do not include 13% HST.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Studio on Fernbank Road in Stittsville. Children&#x27;s face painting on location within Ottawa West.</p></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6137255798">&#9742; 613-725-5798</a><a class="line" href="mailto:info@lindajoysoasis.ca">&#9993; info@lindajoysoasis.ca</a><p>Stittsville, ON</p></div>
+<form onsubmit="return sendQuote(event)">
+<input name="name" placeholder="Your name" required>
+<input name="phone" placeholder="Phone or email" required>
+<textarea name="msg" rows="4" placeholder="Your event, date and how many people"></textarea>
+<button class="btn light" type="submit">Send request</button>
+</form></div></div></section>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 LINDAJOY&#x27;s Oasis &middot; Stittsville, ON &middot; Website by OttawaSites</span></div></footer></div>
+<div class="callbar"><a class="btn" href="tel:6137255798">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
+<script>
+function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
+location.href="mailto:info@lindajoysoasis.ca?subject="+encodeURIComponent("Quote request from website")+"&body="+encodeURIComponent(b);return false}
+</script>
+</body>
+</html>
