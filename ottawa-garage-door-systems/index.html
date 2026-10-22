@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ottawa Garage Door Systems | Garage Doors in Ottawa</title>
+<meta name="description" content="Locally owned garage door installs, repairs and LiftMaster openers for Ottawa, Carp and the surrounding area, with free in-home design advice.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#1d4e89;--accent2:#f2a541;--ink:#1b1f24;--muted:#5b6470;--bg:#fff;--soft:#f4f5f7;--dark:#0d1117;--r:14px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:64px}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:#000;color:#fff;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eceef1}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:16px}
+.logo{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:800;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:40px;width:auto}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-weight:600;font-size:15px}.links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:var(--r);border:2px solid var(--accent);cursor:pointer;font-size:16px;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.light{background:#fff;color:var(--dark);border-color:#fff}
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,var(--accent2),transparent 60%),linear-gradient(135deg,var(--dark),#000);overflow:hidden}
+.hero .wrap{position:relative;padding:84px 20px 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin:0 0 18px}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
+.badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--accent);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
+.trust span:before{content:"\2713";margin-right:8px;opacity:.85}
+section{padding:76px 0}section.alt{background:var(--soft)}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.card .num{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:800;font-size:15px;color:var(--accent);margin-bottom:10px;letter-spacing:.05em}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.why li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.why li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e8eaee}
+.hours td{padding:12px 18px;border-bottom:1px solid #eef0f3}.hours td:last-child{text-align:right;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#e9ebee}
+.map{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:22px}
+.contact{background:var(--dark);color:#fff;border-radius:calc(var(--r) * 1.5);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{color:rgba(255,255,255,.75)}.contact a.line{display:block;font-size:18px;font-weight:700;text-decoration:none;margin:8px 0;overflow-wrap:anywhere}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:560px){.prices td{padding:12px}.prices td:last-child{white-space:normal;min-width:84px}.prices td:first-child{overflow-wrap:anywhere}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site{color:var(--muted);font-size:14px;padding:30px 0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
+.callbar .btn{flex:1;padding:12px}
+@media(max-width:800px){.links{display:none}.hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}.badge{display:none}
+.split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
+@media(min-width:801px){body{padding-bottom:0}}
+
+h1,h2{font-weight:700;letter-spacing:-.035em}
+.hero.hp{background:var(--accent);padding:0}
+.hero.hp .wrap{max-width:none;padding:0;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;min-height:min(80vh,680px)}
+.hero.hp .htext{padding:80px max(20px,calc((100vw - 1100px)/2 + 20px)) 80px max(20px,calc((100vw - 1100px)/2 + 20px));padding-right:48px;display:flex;flex-direction:column;justify-content:center}
+.hero.hp h1{font-size:clamp(38px,5vw,66px)}
+.hero.hp p{color:rgba(255,255,255,.88)}
+.hero.hp .eyebrow{color:#fff;opacity:.85}
+.hero.hp .btn{background:#fff;color:var(--accent);border-color:#fff}
+.hero.hp .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.hp-media{position:relative;min-height:320px}
+.hp-media img,.hp-media .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hp-media .art{display:grid;place-items:center;background:var(--dark)}
+.hp-media .art svg{width:38%;fill:none;stroke:var(--accent2);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--dark)}.trust span:before{color:var(--accent2);opacity:1}
+.grid.svc{grid-template-columns:repeat(3,1fr)}
+.grid.svc .card:first-child{grid-column:span 2;background:var(--dark);color:#fff;border-color:var(--dark)}
+.grid.svc .card:first-child p{color:rgba(255,255,255,.75)}
+.grid.svc .card:first-child .num{color:var(--accent2)}
+.grid.svc .card .num{font-family:'Space Grotesk',sans-serif;font-size:13px;border:1px solid currentColor;display:inline-block;padding:3px 9px;border-radius:999px}
+.card,.step,.rev{border-color:#e3e6ea}
+.kicker{font-family:'Space Grotesk',sans-serif}
+.about-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:14px}
+@media(max-width:800px){.hero.hp .wrap{grid-template-columns:1fr;min-height:0}.hero.hp .htext{padding:56px 20px}.hp-media{min-height:260px}
+.grid.svc{grid-template-columns:1fr}.grid.svc .card:first-child{grid-column:auto}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Ottawa Garage Door Systems", "areaServed": "Ottawa", "telephone": "613-831-7117", "email": "info@ottawagaragedoorsystems.ca", "address": "168 Wescar Lane, Carp, ON K0A 1L0"}</script>
+<script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
+</head>
+<body>
+<div class="preview">Sample website made for Ottawa Garage Door Systems by Kevin. Not live yet.</div>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">Ottawa Garage Door <span>Systems</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#area">Area</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:6138317117">Call 613-831-7117</a>
+</div></nav>
+<header class="hero hp" id="top"><div class="wrap">
+<div class="htext"><div class="eyebrow">Garage Doors &middot; Ottawa</div>
+<h1>Garage doors done right, 30+ years of know-how</h1><p>Locally owned garage door installs, repairs and LiftMaster openers for Ottawa, Carp and the surrounding area, with free in-home design advice.</p>
+<div class="cta"><a class="btn" href="tel:6138317117">Call 613-831-7117</a><a class="btn ghost" href="#contact">Get a free quote</a></div></div>
+<div class="hp-media"><div class="art"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-5 9 5v12M7 21v-8h10v8M7 16h10"/></svg></div><img src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2026/09/IMG_1696.jpeg" alt="Ottawa Garage Door Systems" onerror="this.remove()"></div>
+</div></header>
+<div class="trust"><div class="wrap"><span>30+ years experience</span><span>Locally owned</span><span>Best of TrustedPros 2025</span><span>Free in-home design advice</span><span>LiftMaster openers</span></div></div>
+<section id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Locally owned, serving Ottawa for over 30 years</h2><p class="lead">Ottawa Garage Door Systems is a locally owned and operated garage door company. We install new garage doors and automatic openers, and repair and maintain the ones you have.</p><p class="lead">We work with several manufacturers, so you get a wide range of designs, styles and price points. Our team has over 30 years of management, sales and technical experience, and we stand behind our products.</p></div><div class="facts"><img src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2026/06/IMG_9865.jpeg" alt="Ottawa Garage Door Systems" class="about-img" loading="lazy" onerror="this.remove()"><div class="fact">Over 30 years of experience</div><div class="fact">Best of TrustedPros 2025, Garage Door in Ottawa</div><div class="fact">BBB business profile</div><div class="fact">Trusted by new home builders</div></div></div></section>
+<section class="alt" id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid svc"><div class="card"><div class="num">01</div><h3>New garage doors</h3><p>Raised panel, carriage house, shaker, wood overlay, full-view glass and more.</p></div><div class="card"><div class="num">02</div><h3>Garage door repairs</h3><p>Panels, glass inserts and general service to keep your door running smoothly.</p></div><div class="card"><div class="num">03</div><h3>Springs &amp; cables</h3><p>Torsion and extension spring and cable replacement.</p></div><div class="card"><div class="num">04</div><h3>Automatic openers</h3><p>LiftMaster openers installed and repaired, with Wi-Fi, cameras and battery backup options.</p></div><div class="card"><div class="num">05</div><h3>Parts &amp; accessories</h3><p>Remotes, keypads, parts and opener gear replacement.</p></div><div class="card"><div class="num">06</div><h3>New home builders</h3><p>Product training for your designers and buyers, and on-time installs.</p></div></div></div></section>
+<section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2026/06/IMG_9865.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2026/06/IMG_9840.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/11/IMG_9105.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/10/IMG_8947.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/10/IMG_8926.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/10/IMG_8930.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/09/IMG_8757.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/09/IMG_8860.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/08/IMG_8707.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/07/IMG_8401.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/07/IMG_8517.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"><img loading="lazy" src="https://ottawagaragedoorsystems.ca/wp-content/uploads/2025/04/IMG_8194.jpeg" alt="Garage door installed by Ottawa Garage Door Systems" onerror="dropImg(this)"></div></div></section>
+<section class="alt"><div class="wrap "><div><p class="kicker">Why choose us</p><h2>Why Ottawa Garage Door Systems?</h2><ul class="why"><li>Over 30 years of experienced management, sales and technical staff</li><li>Free in-home design advice to pick the right door</li><li>Doors from reputable suppliers, including the Garaga line</li><li>Employees trained and covered by WSIB</li></ul></div></div></section>
+<section id="reviews"><div class="wrap"><p class="kicker">Reviews</p><h2>What customers say</h2><div class="grid"><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;We love the new door – it has exceeded our expectations&rdquo;</blockquote><figcaption>Dave and Suzanne Rowlands</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Thanks Corey. We&#x27;re very happy with the doors and the service.&rdquo;</blockquote><figcaption>Customer in Carp</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Thanks again for a great job! Huge difference.&rdquo;</blockquote><figcaption>Customer in Osgoode</figcaption></figure></div></div></section>
+<section class="alt"><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Request a quote</h3><p>Call 613-831-7117 or send a quick quote request.</p></div><div class="step"><h3>Free design advice</h3><p>We visit your home and help you choose the right door and opener.</p></div><div class="step"><h3>Installed with care</h3><p>Our trained crew installs it and leaves your garage clean.</p></div></div></div></section>
+<section class="x" id="emergency"><div class="wrap"><div class="extra"><div><p class="kicker">Door stuck?</p><h2>Emergency garage door service</h2><p style="color:var(--muted);font-size:17px">Broken spring, snapped cable or a door that won&#x27;t close? Call our emergency line at 613-913-DOOR (3667).</p><a class="btn" href="tel:6139133667">Call 613-913-3667</a></div><ul><li>Torsion and extension springs</li><li>Torsion and extension cables</li><li>Opener gear replacement</li><li>Panel and glass insert replacement</li></ul></div></div></section>
+<section class="alt" id="faq"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Is the quote free?</summary><p>Yes. Quotes are free and no-obligation, and we can visit your site.</p></details><details><summary>Do you replace broken springs and cables?</summary><p>Yes. We replace torsion and extension springs and cables.</p></details><details><summary>What openers do you install?</summary><p>LiftMaster openers, including models with Wi-Fi and the myQ app, built-in cameras and battery backup.</p></details><details><summary>What do I do if my door breaks?</summary><p>For emergency service call 613-913-DOOR (3667).</p></details><details><summary>Do you work with home builders?</summary><p>Yes. We supply and install doors for new home builders and can train your designers and buyers on current styles.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa and the surrounding area, including Carp, Kanata, Stittsville, Nepean, Manotick, Osgoode, Gloucester, Orléans and Westboro.</p></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+<div><h2 style="margin-bottom:12px">Get in touch</h2><a class="revlink" href="https://trustedpros.ca/company/ottawa-garage-door-systems">&#9733; See our TrustedPros profile</a><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6138317117">&#9742; 613-831-7117</a><a class="line" href="mailto:info@ottawagaragedoorsystems.ca">&#9993; info@ottawagaragedoorsystems.ca</a><p>168 Wescar Lane, Carp, ON K0A 1L0</p></div>
+<form onsubmit="return sendQuote(event)">
+<input name="name" placeholder="Your name" required>
+<input name="phone" placeholder="Phone or email" required>
+<textarea name="msg" rows="4" placeholder="New door or repair? Your town, door size and what&#x27;s going on"></textarea>
+<button class="btn light" type="submit">Send request</button>
+</form></div></div></section>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 Ottawa Garage Door Systems &middot; 168 Wescar Lane, Carp, ON K0A 1L0 &middot; Website by OttawaSites</span></div></footer></div>
+<div class="callbar"><a class="btn" href="tel:6138317117">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
+<script>
+function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
+location.href="mailto:info@ottawagaragedoorsystems.ca?subject="+encodeURIComponent("Quote request from website")+"&body="+encodeURIComponent(b);return false}
+</script>
+</body>
+</html>

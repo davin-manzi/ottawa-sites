@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Queensway Door | Windows &amp; Doors in Ottawa</title>
+<meta name="description" content="Family-owned since 1979. Windows, entry and storm doors, glass, screens, locks and repairs for Ottawa homes and businesses.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#7a1f1f;--accent2:#d9a441;--ink:#1b1f24;--muted:#5b6470;--bg:#fff;--soft:#f4f5f7;--dark:#1f1a14;--r:6px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:64px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:#000;color:#fff;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eceef1}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:16px}
+.logo{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:40px;width:auto}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-weight:600;font-size:15px}.links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:var(--r);border:2px solid var(--accent);cursor:pointer;font-size:16px;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.light{background:#fff;color:var(--dark);border-color:#fff}
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,var(--accent2),transparent 60%),linear-gradient(135deg,var(--dark),#000);overflow:hidden}
+.hero .wrap{position:relative;padding:84px 20px 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin:0 0 18px}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
+.badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--accent);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
+.trust span:before{content:"\2713";margin-right:8px;opacity:.85}
+section{padding:76px 0}section.alt{background:var(--soft)}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.card .num{font-family:'Fraunces',Georgia,serif;font-weight:800;font-size:15px;color:var(--accent);margin-bottom:10px;letter-spacing:.05em}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.why li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.why li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e8eaee}
+.hours td{padding:12px 18px;border-bottom:1px solid #eef0f3}.hours td:last-child{text-align:right;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#e9ebee}
+.map{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:22px}
+.contact{background:var(--dark);color:#fff;border-radius:calc(var(--r) * 1.5);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{color:rgba(255,255,255,.75)}.contact a.line{display:block;font-size:18px;font-weight:700;text-decoration:none;margin:8px 0;overflow-wrap:anywhere}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:560px){.prices td{padding:12px}.prices td:last-child{white-space:normal;min-width:84px}.prices td:first-child{overflow-wrap:anywhere}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site{color:var(--muted);font-size:14px;padding:30px 0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
+.callbar .btn{flex:1;padding:12px}
+@media(max-width:800px){.links{display:none}.hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}.badge{display:none}
+.split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
+@media(min-width:801px){body{padding-bottom:0}}
+
+:root{--bg:#f7f3ec;--soft:#efe7da;--ink:#211b14;--muted:#6b6257}
+body{background:var(--bg)}
+.nav{background:rgba(247,243,236,.94);border-bottom:1px solid #e4dccf}
+.logo span{color:var(--accent)}
+h1,h2{font-weight:700;letter-spacing:-.02em}
+.hero.hs{background:var(--bg);color:var(--ink)}
+.hero.hs .wrap{grid-template-columns:1.05fr .95fr;padding:72px 20px 80px;gap:56px}
+.hero.hs h1{font-size:clamp(40px,6vw,74px);line-height:1.02}
+.hero.hs p{color:var(--muted)}
+.hero.hs .eyebrow{color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:4px}
+.hero.hs .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.hero.hs .chip{color:var(--ink)}
+.hs-media{position:relative;justify-self:stretch}
+.hs-media:before{content:"";position:absolute;inset:22px -18px -18px 22px;background:var(--accent);border-radius:var(--r);opacity:.9}
+.hs-media img,.hs-media .art{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:0 30px 60px rgba(33,27,20,.18)}
+.art{display:grid;place-items:center;background:linear-gradient(160deg,var(--dark),#000)}
+.art svg{width:42%;fill:none;stroke:var(--accent2);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--ink)}
+.trust span:before{content:"\2014";}
+.grid.svc{grid-template-columns:repeat(2,1fr);gap:0 48px}
+.grid.svc .card{background:none;border:0;border-top:1px solid #d9cfbf;border-radius:0;padding:26px 0;display:grid;grid-template-columns:64px 1fr;column-gap:8px}
+.grid.svc .card:hover{transform:none;box-shadow:none}
+.grid.svc .card .num{font-family:'Fraunces',serif;font-size:30px;font-weight:500;grid-row:span 2;margin:0}
+.grid.svc .card img.ic{grid-row:span 2}
+.kicker{font-family:'Inter',sans-serif;letter-spacing:.18em}
+section.alt{background:var(--soft)}
+.card,.step,.rev,.hours,.prices{background:#fffdf9;border-color:#e4dccf}
+.fact{background:#fffdf9;border-left:3px solid var(--accent);border-radius:0}
+.btn{border-radius:999px}
+.contact{background:var(--ink)}
+.about-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:14px}
+@media(max-width:800px){.hero.hs .wrap{grid-template-columns:1fr;padding:44px 20px 56px;gap:34px}.grid.svc{grid-template-columns:1fr}.hs-media{display:block;margin:0 18px 18px 0}.hs-media img,.hs-media .art{aspect-ratio:4/3}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "A Queensway Door", "areaServed": "Ottawa", "telephone": "613-225-6557", "email": "info@queenswaydoorservice.com", "address": "3326 Limebank Road, Bay 4, Ottawa, ON K1V 1H2", "sameAs": ["https://www.facebook.com/QUEENSWAYDOOR"]}</script>
+<script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
+</head>
+<body>
+<div class="preview">Sample website made for A Queensway Door by Kevin. Not live yet.</div>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">A Queensway <span>Door</span></a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#area">Area</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:6132256557">Call 613-225-6557</a>
+</div></nav>
+<header class="hero hs" id="top"><div class="wrap">
+<div class="htext"><div class="eyebrow">Windows &amp; Doors &middot; Ottawa</div>
+<h1>Ottawa&#x27;s window and door specialist since 1979</h1><p>Family-owned since 1979. Windows, entry and storm doors, glass, screens, locks and repairs for Ottawa homes and businesses.</p>
+<div class="cta"><a class="btn" href="tel:6132256557">Call 613-225-6557</a><a class="btn ghost" href="#contact">Get a free estimate</a></div></div>
+<div class="hs-media"><img src="https://static.wixstatic.com/media/ba2cd3_1db2459a2fdc4c6f8f72f0baf5ea3b1b~mv2.jpg" alt="A Queensway Door" onerror="this.remove()"></div>
+</div></header>
+<div class="trust"><div class="wrap"><span>Since 1979</span><span>Family-owned</span><span>Residential and commercial</span><span>Drop in on Limebank Rd</span><span>Free estimates</span></div></div>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid svc"><div class="card"><div class="num">01</div><h3>Windows</h3><p>New windows for builds and renovations, plus repairs and full glass replacement.</p></div><div class="card"><div class="num">02</div><h3>Exterior &amp; garden doors</h3><p>Entry, French, patio and garden doors that keep out weather and intruders.</p></div><div class="card"><div class="num">03</div><h3>Storm doors</h3><p>Protect your main door, with glass and screen panels you can swap for a breeze.</p></div><div class="card"><div class="num">04</div><h3>Commercial doors</h3><p>Aluminum and steel entrances, automatic doors and fire-rated doors.</p></div><div class="card"><div class="num">05</div><h3>Locks &amp; hardware</h3><p>Lock repair and re-keying, plus hard-to-find window and door hardware.</p></div><div class="card"><div class="num">06</div><h3>Glass, screens &amp; mirrors</h3><p>Glass replaced in-house or on-site, screens repaired, mirrored doors and walls.</p></div><div class="card"><div class="num">07</div><h3>Accessibility door operators</h3><p>Automated door operators for customers with disabilities.</p></div></div></div></section>
+<section class="alt" id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>A family business since 1979</h2><p class="lead">Queensway Door Service was established in 1979 as a multi-service window and door company, founded by Raymond Bourgon (1943 to 2019). We are an Ottawa-based, family-owned and operated business.</p><p class="lead">We sell, install and repair windows and doors in aluminum, steel, vinyl and wood, for homes and commercial buildings across Ottawa. Drop in and our sales team will help with your questions.</p></div><div class="facts"><img src="https://static.wixstatic.com/media/ba2cd3_9a4e0acce15b40ff8ecdf2f920245f29~mv2.jpg" alt="A Queensway Door" class="about-img" loading="lazy" onerror="this.remove()"><div class="fact">Established in 1979</div><div class="fact">Founded by Raymond Bourgon</div><div class="fact">Aluminum, steel, vinyl and wood</div><div class="fact">Family-owned and operated</div></div></div></section>
+<section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_9a4e0acce15b40ff8ecdf2f920245f29~mv2.jpg" alt="Residential door by Queensway Door" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_8eecd61780174b6fa62a4fd749370662~mv2.jpg" alt="Residential door by Queensway Door" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_05eec5adc19748508f5072b637703283~mv2.jpg" alt="Residential door by Queensway Door" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_4843938a0f3f4c3db1db4d7e1e3bdf8c~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_45905d9a06584a6288d5ac69af3707f0~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_ea7003419c114ac3a5b42e51ef67492a~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_6c020008407043cea17c1175cc29a8a8~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_acf2f5e87e404b849868fb84c23cb09e~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_5b679cb83a9e4bd4adeec28a51dae614~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_2c1b27316d834af5bb375d6b94610d43~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_895ce1f2a2fb48729feea8734446a8d8~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"><img loading="lazy" src="https://static.wixstatic.com/media/ba2cd3_d2401726332a4106b9d3b7ac90bbb47a~mv2.jpg" alt="Commercial door project" onerror="dropImg(this)"></div></div></section>
+<section class="alt" id="reviews"><div class="wrap"><p class="kicker">Reviews</p><h2>What customers say</h2><div class="grid"><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Excellent quality door, installer arrived on time, did a great installation.&rdquo;</blockquote><figcaption>S. C.</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;We bought our new front door for Villa Lucia Supper Club from Queensway Door Service and are very happy with it.&rdquo;</blockquote><figcaption>Fab D.</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Their after-sale service is top-notch. We highly recommend them.&rdquo;</blockquote><figcaption>Fab D.</figcaption></figure></div></div></section>
+<section><div class="wrap split"><div><p class="kicker">Why choose us</p><h2>Why Queensway Door?</h2><ul class="why"><li>Family-owned and serving Ottawa since 1979</li><li>One shop for windows, doors, glass, screens and locks</li><li>Trusted brands like Everlast, Deno, Melco, Riopel and Taymor</li><li>Drop in on Limebank Road and talk to our sales team</li></ul></div><div><p class="kicker">Open</p><h2>Hours</h2><table class="hours"><tr><td>Monday to Thursday</td><td>8:00am to 4:30pm</td></tr><tr><td>Friday</td><td>8:00am to 4:00pm</td></tr><tr><td>Saturday and Sunday</td><td>Closed</td></tr></table></div></div></section>
+<section class="alt"><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Call or drop in</h3><p>Call 613-225-6557 or drop in on Limebank Road.</p></div><div class="step"><h3>Get your estimate</h3><p>Tell us what you need and we&#x27;ll give you a free estimate.</p></div><div class="step"><h3>Installed or repaired</h3><p>We install your new window or door, or fix the one you have.</p></div></div></div></section>
+<section class="x" id="storm"><div class="wrap"><div class="extra"><div><p class="kicker">Before winter</p><h2>Storm doors and weatherstripping</h2><p style="color:var(--muted);font-size:17px">A storm door protects your main door from harsh weather, and new weatherstripping and gaskets stop drafts.</p><a class="btn" href="#contact">Get a free estimate</a></div><ul><li>Storm door sales, installation and repair</li><li>Weatherstripping and gaskets</li><li>Window and door screen repairs</li><li>Glass replacement, in-house or on-site</li></ul></div></div></section>
+<section class="alt" id="faq"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>Do you give free estimates?</summary><p>Yes. Contact us for a free estimate.</p></details><details><summary>Do you repair windows and doors, or only sell new ones?</summary><p>Both. We repair windows, patio, storm and garden doors, screens and locks, and replace glass in-house or on-site.</p></details><details><summary>Do you work on commercial buildings?</summary><p>Yes. We supply and service aluminum and steel entrances, automatic doors, fire-rated doors and security hardware.</p></details><details><summary>Can you find a replacement part for my old window or door?</summary><p>Often, yes. We carry a wide range of hardware, including hard-to-find pieces.</p></details><details><summary>What are your hours?</summary><p>Monday to Thursday, 8:00am to 4:30pm, and Friday, 8:00am to 4:00pm.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Ottawa, for homes and businesses. Drop in at 3326 Limebank Road, Bay 4.</p><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=3326%20Limebank%20Road%2C%20Bay%204%2C%20Ottawa%2C%20ON%20K1V%201H2&output=embed" title="Map"></iframe></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6132256557">&#9742; 613-225-6557</a><a class="line" href="mailto:info@queenswaydoorservice.com">&#9993; info@queenswaydoorservice.com</a><p>3326 Limebank Road, Bay 4, Ottawa, ON K1V 1H2</p><div class="socials"><a href="https://www.facebook.com/QUEENSWAYDOOR" target="_blank" rel="noopener" aria-label="A Queensway Door on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a></div></div>
+<form onsubmit="return sendQuote(event)">
+<input name="name" placeholder="Your name" required>
+<input name="phone" placeholder="Phone or email" required>
+<textarea name="msg" rows="4" placeholder="Window, door, glass or lock? Size, location and what you need"></textarea>
+<button class="btn light" type="submit">Send request</button>
+</form></div></div></section>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 A Queensway Door &middot; 3326 Limebank Road, Bay 4, Ottawa, ON K1V 1H2 &middot; Website by OttawaSites</span><div class="socials"><a href="https://www.facebook.com/QUEENSWAYDOOR" target="_blank" rel="noopener" aria-label="A Queensway Door on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a></div></div></footer></div>
+<div class="callbar"><a class="btn" href="tel:6132256557">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
+<script>
+function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
+location.href="mailto:info@queenswaydoorservice.com?subject="+encodeURIComponent("Quote request from website")+"&body="+encodeURIComponent(b);return false}
+</script>
+</body>
+</html>
