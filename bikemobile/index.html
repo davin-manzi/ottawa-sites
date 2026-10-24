@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bikemobile | Mobile Bike Repair in Ottawa</title>
+<meta name="description" content="Ottawa&#x27;s original mobile bicycle service. Peter comes to your home or workplace, tunes your bike on the spot, and you pay after your test ride.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#1f6fb2;--accent2:#8cc4f0;--ink:#1b1f24;--muted:#5b6470;--bg:#fff;--soft:#f4f5f7;--dark:#1d2433;--r:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:64px}
+h1,h2,h3{font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.preview{background:#000;color:#fff;font:14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+.nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid #eceef1}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:68px;gap:16px}
+.logo{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:20px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo img{height:40px;width:auto}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;font-weight:600;font-size:15px}.links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:var(--r);border:2px solid var(--accent);cursor:pointer;font-size:16px;font-family:inherit}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.light{background:#fff;color:var(--dark);border-color:#fff}
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%,var(--accent2),transparent 60%),linear-gradient(135deg,var(--dark),#000);overflow:hidden}
+.hero .wrap{position:relative;padding:84px 20px 92px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent2);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin:0 0 18px}
+.hero p{font-size:19px;color:rgba(255,255,255,.82);max-width:600px;margin:0 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{justify-self:end;width:min(300px,100%);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
+.badge img{width:70%;height:auto}.hero.photo .badge{background:rgba(0,0,0,.35)}
+.badge svg{width:46%;height:46%;fill:none;stroke:var(--accent2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:var(--accent);color:#fff}
+.trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;padding:16px 20px;font-weight:700;font-size:15px}
+.trust span:before{content:"\2713";margin-right:8px;opacity:.85}
+section{padding:76px 0}section.alt{background:var(--soft)}
+.kicker{color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(28px,3.6vw,38px);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.card .num{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-weight:800;font-size:15px;color:var(--accent);margin-bottom:10px;letter-spacing:.05em}
+.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.why{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.why li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.why li:before{content:"";flex:0 0 22px;height:22px;border-radius:50%;background:var(--accent);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a10 10 0 100 20 10 10 0 000-20zm-1.5 14.5l-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4-7 7z'/%3E%3C/svg%3E") center/contain no-repeat}
+.hours{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid #e8eaee}
+.hours td{padding:12px 18px;border-bottom:1px solid #eef0f3}.hours td:last-child{text-align:right;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);background:#e9ebee}
+.map{width:100%;height:320px;border:0;border-radius:var(--r);margin-top:22px}
+.contact{background:var(--dark);color:#fff;border-radius:calc(var(--r) * 1.5);padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:36px}
+.contact p{color:rgba(255,255,255,.75)}.contact a.line{display:block;font-size:18px;font-weight:700;text-decoration:none;margin:8px 0;overflow-wrap:anywhere}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:calc(var(--r) * .7);border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55)}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p.lead{font-size:18px;color:var(--muted)}
+.facts{display:grid;gap:12px}.fact{background:var(--soft);border-radius:var(--r);padding:16px 18px;font-weight:600}
+.card img.ic{height:56px;width:auto;margin-bottom:12px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.step{position:relative;padding:24px;border-radius:var(--r);background:#fff;border:1px solid #e8eaee}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:18px}.step p{margin:0;color:var(--muted)}
+.extra{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;background:var(--soft);border-radius:calc(var(--r) * 1.5);padding:40px}
+section.x{padding:32px 0}.extra ul{margin:0;padding-left:20px}.extra ul.cols{columns:2}.extra li{margin:0 0 8px}
+details{border-bottom:1px solid #e5e7eb;padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--accent);font-size:22px;line-height:1}details[open] summary:after{content:"2"}details p{color:var(--muted);margin:10px 0 0}
+.revlink{display:inline-block;margin:0 0 14px;color:var(--accent2);font-weight:700}
+@media(max-width:800px){.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.about,.extra{grid-template-columns:1fr}.extra{padding:26px 20px}}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.socials a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1);text-decoration:none;font-weight:700;font-size:14px}
+.socials svg{width:18px;height:18px;fill:currentColor}footer.site .socials a{background:var(--soft);color:var(--ink)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:20px}
+.revhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:-14px 0 26px;color:var(--muted);font-weight:600}
+.rev{background:#fff;border:1px solid #e8eaee;border-radius:var(--r);padding:24px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{margin:0;font-size:17px}.rev figcaption{color:var(--muted);font-weight:700;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-weight:700;color:rgba(255,255,255,.9);text-decoration:none}
+.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8eaee;border-radius:var(--r);overflow:hidden}
+.prices td{padding:14px 18px;border-bottom:1px solid #eef0f3;vertical-align:top}.prices td:last-child{text-align:right;font-weight:800;color:var(--accent);white-space:nowrap}
+.prices small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:560px){.prices td{padding:12px}.prices td:last-child{white-space:normal;min-width:84px}.prices td:first-child{overflow-wrap:anywhere}}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+.fcols{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer.site{color:var(--muted);font-size:14px;padding:30px 0}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:none;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #e5e7eb}
+.callbar .btn{flex:1;padding:12px}
+@media(max-width:800px){.links{display:none}.hero .wrap{grid-template-columns:1fr;padding:56px 20px 64px}.badge{display:none}
+.split,.contact{grid-template-columns:1fr}.contact{padding:28px 20px}section{padding:54px 0}.nav .btn{display:none}.callbar{display:flex}}
+@media(min-width:801px){body{padding-bottom:0}}
+
+:root{--soft:color-mix(in srgb,var(--accent) 7%,#fff)}
+h1,h2{font-weight:800;letter-spacing:-.03em}
+.nav{border-bottom:0}.nav .wrap{height:76px}
+.btn{border-radius:999px;box-shadow:0 8px 20px color-mix(in srgb,var(--accent) 30%,transparent)}
+.hero.hc{color:var(--ink);background:radial-gradient(600px 380px at 12% 10%,color-mix(in srgb,var(--accent2) 35%,transparent),transparent 70%),radial-gradient(700px 420px at 92% 30%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 70%),#fff;text-align:center}
+.hero.hc .wrap{grid-template-columns:1fr;padding:72px 20px 56px;justify-items:center}
+.hero.hc h1{font-size:clamp(38px,6vw,68px);max-width:16ch;margin-left:auto;margin-right:auto}
+.hero.hc p{color:var(--muted);margin-left:auto;margin-right:auto}
+.hero.hc .cta{justify-content:center}.hero.hc .btn.ghost{color:var(--ink);border-color:color-mix(in srgb,var(--ink) 25%,transparent);box-shadow:none}
+.hero.hc .eyebrow{background:#fff;color:var(--accent);padding:7px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.06);letter-spacing:.08em}
+.hero.hc .chip{color:var(--ink);justify-content:center}
+.collage{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:100%;max-width:980px;margin-top:44px}
+.collage img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:28px;box-shadow:0 20px 40px rgba(29,36,51,.15)}
+.collage img:nth-child(1){transform:rotate(-3deg) translateY(14px)}.collage img:nth-child(3){transform:rotate(3deg) translateY(14px)}
+.collage .art{aspect-ratio:auto;height:180px;border-radius:28px;grid-column:1/-1;display:grid;place-items:center;background:var(--soft)}
+.collage .art svg{height:70%;fill:none;stroke:var(--accent);stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.trust{background:transparent;color:var(--ink)}
+.trust .wrap{gap:10px}.trust span{background:var(--soft);padding:9px 16px;border-radius:999px;font-size:14px}
+.trust span:before{color:var(--accent);opacity:1}
+.grid.svc .card{background:var(--soft);border:0}
+.grid.svc .card .num{display:grid;place-items:center;width:46px;height:46px;border-radius:16px;background:var(--accent);color:#fff;font-size:15px}
+section.alt{background:var(--soft)}section.alt .card,section.alt .rev,section.alt .step{background:#fff}
+.card,.step,.rev{border:0;box-shadow:0 6px 24px rgba(29,36,51,.06)}
+.fact{background:#fff;box-shadow:0 6px 24px rgba(29,36,51,.06)}
+.contact{background:linear-gradient(135deg,var(--dark),color-mix(in srgb,var(--accent) 55%,var(--dark)))}
+.about-img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r);margin-bottom:14px}
+@media(max-width:800px){.collage{gap:8px;margin-top:30px}.collage img{border-radius:18px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Bikemobile", "areaServed": "Ottawa", "telephone": "613-698-6982", "email": "bikeman@bikemobile.ca", "address": "Ottawa, ON", "sameAs": ["https://facebook.com/bikemobile.ottawa", "https://youtube.com/bikeman2691"]}</script>
+<script>function dropImg(i){var g=i.parentNode;i.remove();if(g&&!g.children.length)g.closest("section").remove()}</script>
+</head>
+<body>
+<div class="preview">Sample website made for Bikemobile by Kevin. Not live yet.</div>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="#top">Bikemobile</a>
+<div class="links"><a href="#about">About</a><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#area">Area</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+<a class="btn" href="tel:6136986982">Call 613-698-6982</a>
+</div></nav>
+<header class="hero hc" id="top"><div class="wrap">
+<div class="htext"><div class="eyebrow">Mobile Bike Repair &middot; Ottawa</div>
+<h1>Your bike tuned in your driveway</h1><p>Ottawa&#x27;s original mobile bicycle service. Peter comes to your home or workplace, tunes your bike on the spot, and you pay after your test ride.</p>
+<div class="cta"><a class="btn" href="tel:6136986982">Call 613-698-6982</a><a class="btn ghost" href="#contact">Email to book</a></div></div>
+<div class="collage"><img src="https://bikemobile.ca/slider-pics/van_in_road.jpg" alt="Bikemobile" onerror="this.remove()"><img src="https://bikemobile.ca/new-pics/about-Peter.jpg" alt="Bikemobile" onerror="this.remove()"><img src="https://bikemobile.ca/new-pics/gear.closeup.jpg" alt="Bikemobile" onerror="this.remove()"></div>
+</div></header>
+<div class="trust"><div class="wrap"><span>Ottawa&#x27;s original mobile bike service</span><span>Kanata to Orleans</span><span>Pay after your test ride</span><span>Multi-bike discounts</span></div></div>
+<section id="services"><div class="wrap"><p class="kicker">What we do</p><h2>Services</h2><div class="grid svc"><div class="card"><div class="num">01</div><h3>Tune-ups at your door</h3><p>Gears and brakes adjusted, chain cleaned and lubed, tires pumped, and everything checked and tightened.</p></div><div class="card"><div class="num">02</div><h3>Complete overhaul</h3><p>Full breakdown, cleaning, new grease and ball bearings, then a thorough tune-up.</p></div><div class="card"><div class="num">03</div><h3>Repairs and shifters</h3><p>Shifter repair and small fixes, done where your bike is.</p></div><div class="card"><div class="num">04</div><h3>New bike and e-bike builds</h3><p>Your new bike assembled and set up properly. E-bikes get the same mechanical tune-up.</p></div><div class="card"><div class="num">05</div><h3>Accessories installed on site</h3><p>Lights, locks, helmets, fenders, racks, pumps and computers, fitted on the spot.</p></div><div class="card"><div class="num">06</div><h3>Workplace and community clinics</h3><p>Tune-ups and how-to lessons for your office or group.</p></div><div class="card"><div class="num">07</div><h3>Adult trikes and big bikes</h3><p>Large and recumbent trikes that don&#x27;t fit in a car, serviced at home.</p></div></div></div></section>
+<section class="alt" id="prices"><div class="wrap" style="max-width:820px"><p class="kicker">Prices</p><h2>Tune-ups and service</h2><table class="prices"><tr><td>Bikemobile tune-up<small>Bikes tuned properly recently are usually $70</small></td><td>$85</td></tr><tr><td>2 tune-ups</td><td>$160</td></tr><tr><td>3 tune-ups</td><td>$220</td></tr><tr><td>4 or more tune-ups</td><td>$70 each</td></tr><tr><td>E-bike tune-up<small>Mechanical parts only, not electrical</small></td><td>Same as above</td></tr><tr><td>Complete overhaul</td><td>$280</td></tr><tr><td>New bike or e-bike build<small>Adult trikes cost more</small></td><td>$110</td></tr><tr><td>Corporate or community tune-ups and clinics<small>Or the hourly rate</small></td><td>$70 each</td></tr><tr><td>Hourly rate</td><td>$100/hr</td></tr></table><p style="color:var(--muted);margin-top:14px">Prices from bikemobile.ca. Minimum service charge $70 ($50 for repeat customers). Out-of-town rates are negotiable.</p></div></section>
+<section><div class="wrap"><p class="kicker">How it works</p><h2>Simple from start to finish</h2><div class="steps"><div class="step"><h3>Email or text</h3><p>Tell me how many bikes, whether you&#x27;re a returning customer, and what part of town you&#x27;re in. Photos or video of the problem help.</p></div><div class="step"><h3>I come to you</h3><p>Home or work. If no one&#x27;s home, leave the bikes where I can reach them, like the backyard or garage.</p></div><div class="step"><h3>Test ride, then pay</h3><p>Take it for a spin and pay by e-transfer when you&#x27;re happy.</p></div></div></div></section>
+<section class="alt" id="reviews"><div class="wrap"><p class="kicker">Reviews</p><h2>What riders say</h2><div class="grid"><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Today Peter and Mark came to service my bike !! I am so happy! They did a great job! My bike never went so well !&rdquo;</blockquote><figcaption>Sister Jacqueline, The Missionaries of Africa</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;I have been using Peter to tune up my bike each Spring for several years now.&rdquo;</blockquote><figcaption>Brenda Lafleur, Ottawa</figcaption></figure><figure class="rev"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><blockquote>&ldquo;Bikemobile solves the problem by coming to me.&rdquo;</blockquote><figcaption>Matthew Spencer, Ottawa</figcaption></figure></div></div></section>
+<section><div class="wrap"><p class="kicker">Our work</p><h2>Gallery</h2><div class="gallery"><img loading="lazy" src="https://bikemobile.ca/slider-pics/van_in_road.jpg" alt="The Bikemobile van on an Ottawa street" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/about-Peter.jpg" alt="Peter Westaway of Bikemobile" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/gear.closeup.jpg" alt="Repairing a shifter" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/through%20spokes.jpg" alt="A wheel being serviced, seen through the spokes" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/interested%20customer.jpg" alt="A customer at a Bikemobile tune-up" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/teaching%20cogno%20employees.jpg" alt="Bike care lesson for Cognos employees" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/About-pic.jpg" alt="Bikemobile at work" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/ken.jpg" alt="Ken Upiah of Bikemobile" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/shapes-and-sizes%20-%20Copy%20%5B2%5D.JPG" alt="Bikes of all shapes and sizes" onerror="dropImg(this)"><img loading="lazy" src="https://bikemobile.ca/new-pics/dog-bike.JPG" alt="A dog and a bike" onerror="dropImg(this)"></div></div></section>
+<section class="alt" id="about"><div class="wrap about"><div><p class="kicker">About us</p><h2>Ottawa&#x27;s original mobile bicycle service</h2><p class="lead">Forty-four years ago, at nineteen, Peter Westaway hoped to open a small bike repair shop in his mother&#x27;s garage in Bell&#x27;s Corners. Local bylaws said no, so he started going to his customers instead, and he&#x27;s been doing it ever since.</p><p class="lead">Today Bikemobile is very busy every spring. Ken Upiah joins Peter on jobs when his full-time job allows. Every service ends with a test ride, by the mechanic and by you if you like.</p></div><div class="facts"><img src="https://bikemobile.ca/new-pics/about-Peter.jpg" alt="Bikemobile" class="about-img" loading="lazy" onerror="this.remove()"><div class="fact">Run by Peter Westaway</div><div class="fact">Started in Bell&#x27;s Corners</div><div class="fact">Tune-ups, overhauls and builds</div><div class="fact">Workplace clinics and lessons</div></div></div></section>
+<section><div class="wrap "><div><p class="kicker">Why choose us</p><h2>Why Bikemobile?</h2><ul class="why"><li>No hauling your bike to a shop: I come to you</li><li>You don&#x27;t even need to be home</li><li>Pay by e-transfer after you test-ride it</li><li>Multi-bike discounts for the whole family</li></ul></div></div></section>
+<section class="x" id="workplace"><div class="wrap"><div class="extra"><div><p class="kicker">For workplaces and groups</p><h2>Bring a tune-up clinic to your team</h2><p style="color:var(--muted);font-size:17px">Bikemobile visits workplaces and community groups to tune bikes on site, and can teach riders some basics too.</p><a class="btn" href="#contact">Ask about a clinic</a></div><ul><li>$70 per bike, or the hourly rate</li><li>Done right at your office or venue</li><li>Lessons on bike care available</li></ul></div></div></section>
+<section id="faq"><div class="wrap" style="max-width:820px"><p class="kicker">Questions</p><h2>FAQ</h2><details><summary>What areas do you cover?</summary><p>Kanata to Orleans, and Barrhaven/Riverside South is where I am most. Manotick, Carp and beyond if the trip is worthwhile, so get in touch to check.</p></details><details><summary>What is the minimum charge?</summary><p>$70 for an initial service visit. It&#x27;s never added on top of tune-up or hourly charges.</p></details><details><summary>Do I need to be home?</summary><p>No. If I can get to the bikes in your backyard or garage, you can pay later by e-transfer after your test ride.</p></details><details><summary>Is there a discount for several bikes?</summary><p>Yes. Two tune-ups are $160, three are $220, and four or more are $70 each.</p></details><details><summary>How often does my bike need a tune-up?</summary><p>If you commute and put hard miles on your bike, at least once a year. Bikes from non-specialty stores should be tuned as soon as possible.</p></details><details><summary>What if something goes wrong after you leave?</summary><p>If you have any problems with your bike after I leave, I&#x27;ll return as soon as I&#x27;m able.</p></details></div></section>
+<section id="area"><div class="wrap"><p class="kicker">Where we work</p><h2>Service area</h2><p style="font-size:18px;max-width:720px">Kanata to Orleans, with Barrhaven and Riverside South most often. Manotick, Carp and beyond when the trip is worthwhile, just ask.</p></div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="contact">
+<div><h2 style="margin-bottom:12px">Get in touch</h2><p>Tell us what you need and we'll get back to you quickly.</p>
+<a class="line" href="tel:6136986982">&#9742; 613-698-6982</a><a class="line" href="sms:6136986982">&#128172; Text 613-698-6982</a><a class="line" href="mailto:bikeman@bikemobile.ca">&#9993; bikeman@bikemobile.ca</a><p>Ottawa, ON</p><div class="socials"><a href="https://facebook.com/bikemobile.ottawa" target="_blank" rel="noopener" aria-label="Bikemobile on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a><a href="https://youtube.com/bikeman2691" target="_blank" rel="noopener" aria-label="Bikemobile on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.6 12 31 31 0 001 16.8a3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.4-4.8 31 31 0 00-.4-4.8zM9.8 15V9l5.8 3z"/></svg>YouTube</a></div></div>
+<form onsubmit="return sendQuote(event)">
+<input name="name" placeholder="Your name" required>
+<input name="phone" placeholder="Phone or email" required>
+<textarea name="msg" rows="4" placeholder="How many bikes, what part of town, and what needs fixing"></textarea>
+<button class="btn light" type="submit">Send request</button>
+</form></div></div></section>
+<div class="wrap"><footer class="site"><div class="fcols"><span>&copy; 2026 Bikemobile &middot; Ottawa, ON &middot; Website by OttawaSites</span><div class="socials"><a href="https://facebook.com/bikemobile.ottawa" target="_blank" rel="noopener" aria-label="Bikemobile on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg>Facebook</a><a href="https://youtube.com/bikeman2691" target="_blank" rel="noopener" aria-label="Bikemobile on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 00-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 001 7.2 31 31 0 00.6 12 31 31 0 001 16.8a3 3 0 002.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 002.1-2.1 31 31 0 00.4-4.8 31 31 0 00-.4-4.8zM9.8 15V9l5.8 3z"/></svg>YouTube</a></div></div></footer></div>
+<div class="callbar"><a class="btn" href="tel:6136986982">Call</a><a class="btn" style="background:var(--dark);border-color:var(--dark)" href="#contact">Get a quote</a></div>
+<script>
+function sendQuote(e){e.preventDefault();var f=e.target;var b="Name: "+f.name.value+"\nContact: "+f.phone.value+"\n\n"+f.msg.value;
+location.href="mailto:bikeman@bikemobile.ca?subject="+encodeURIComponent("Quote request from website")+"&body="+encodeURIComponent(b);return false}
+</script>
+</body>
+</html>
